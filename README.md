@@ -1,6 +1,6 @@
 # FJMP: Factorized Joint Multi-Agent Motion Prediction over Learned Directed Acyclic Interaction Graphs
 
-  [Paper](https://arxiv.org/abs/2211.16197) | [Project Page](https://rluke22.github.io/fjmp)
+  [Paper](https://arxiv.org/abs/2211.16197) | [Project Page](https://rluke22.github.io/FJMP)
 
 **Luke Rowe, Martin Ethier, Eli-Henry Dykhne, Krzysztof Czarnecki** \
 [WISE Lab, University of Waterloo](https://uwaterloo.ca/waterloo-intelligent-systems-engineering-lab/)

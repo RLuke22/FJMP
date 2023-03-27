@@ -12,7 +12,7 @@ Predicting the future motion of road agents is a critical task in an autonomous 
 
 ```bibtex
 @InProceedings{rowe2023fjmp,
-  title={{FJMP}: Factorized Joint Multi-Agent Motion Prediction over Learned Directed Acyclic Interaction Graphs},
+  title={FJMP: Factorized Joint Multi-Agent Motion Prediction over Learned Directed Acyclic Interaction Graphs},
   author={Rowe, Luke and Ethier, Martin and Dykhne, Eli-Henry and Czarnecki, Krzysztof},
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2023}

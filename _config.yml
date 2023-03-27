@@ -1,4 +1,4 @@
-description: Proposing a joint motion prediction framework that performs factorized decoding over a learned interaction DAG. Work by <a href="https://www.linkedin.com/in/rluke22/">Luke Rowe</a>, <a href="https://www.linkedin.com/in/ethiermartin/">Martin Ethier</a>, <a href="https://www.linkedin.com/in/henry-dykhne-ai">Eli-Henry Dykhne</a>, <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/k2czarne">Krzysztof Czarnecki</a>
+description: Proposing a joint motion prediction framework that performs factorized decoding over a learned interaction DAG.<br>Work by <a href="https://www.linkedin.com/in/rluke22/">Luke Rowe</a>, <a href="https://www.linkedin.com/in/ethiermartin/">Martin Ethier</a>, <a href="https://www.linkedin.com/in/henry-dykhne-ai">Eli-Henry Dykhne</a>, <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/k2czarne">Krzysztof Czarnecki</a>
 theme: jekyll-theme-cayman
 links:
   arxiv: https://arxiv.org/abs/2211.16197

@@ -6,7 +6,7 @@ Predicting the future motion of road agents is a critical task in an autonomous 
 
 ## Method
 
-![img](misc/model.png)
+![img](src/model.png)
 
 ## Citation
 

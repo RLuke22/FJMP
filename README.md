@@ -2,7 +2,7 @@
 
   [Paper](https://arxiv.org/abs/2211.16197) | [Project Page](https://rluke22.github.io/FJMP)
 
-**Luke Rowe, Martin Ethier, Eli-Henry Dykhne, Krzysztof Czarnecki** \
+**[Luke Rowe](https://www.linkedin.com/in/rluke22/), [Martin Ethier](https://www.linkedin.com/in/ethiermartin/), [Eli-Henry Dykhne](https://www.linkedin.com/in/henry-dykhne-ai), [Krzysztof Czarnecki](https://uwaterloo.ca/electrical-computer-engineering/profile/k2czarne)** \
 [WISE Lab, University of Waterloo](https://uwaterloo.ca/waterloo-intelligent-systems-engineering-lab/)
 
 **CVPR 2023**

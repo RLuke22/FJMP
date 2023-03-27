@@ -1,5 +1,5 @@
 title: FJMP: Factorized Joint Multi-Agent Motion Prediction over Learned Directed Acyclic Interaction Graphs
-description: Proposing a novel joint motion prediction architecture that performs factorized decoding over a learned interaction DAG. Authors: <a href="https://www.linkedin.com/in/rluke22/">Luke Rowe</a>, <a href="https://www.linkedin.com/in/ethiermartin/">Martin Ethier</a>, <a href="https://www.linkedin.com/in/henry-dykhne-ai">Eli-Henry Dykhne</a>, <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/k2czarne">Krzysztof Czarnecki</a>
+description: Proposing a novel joint motion prediction architecture that performs factorized decoding over a learned interaction DAG.
 theme: jekyll-theme-cayman
 links:
   arxiv: https://arxiv.org/abs/2211.16197

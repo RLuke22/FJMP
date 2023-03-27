@@ -7,11 +7,11 @@
 
 **CVPR 2023**
 
-**Rank 1st** in [INTERACTION Multi-Agent Prediction Benchmark](http://challenge.interaction-dataset.com/leader-board)
+**Ranks 1st** on the [INTERACTION Multi-Agent Prediction Benchmark](http://challenge.interaction-dataset.com/leader-board)
 
 ![img](misc/model.png)
 
-The source code will be released soon.
+The source code will be released before the CVPR 2023 conference.
 
 ## Citation
 

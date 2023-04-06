@@ -18,15 +18,11 @@ The examples below demonstrate how factorization helps with reasoning in interac
 
 ![img](src/leader_follower.png)
 
-![img](src/leader_follower2.png)
-
 <br />
 
 **Pass-Yield Scenarios**
 
 ![img](src/pass_yield.png)
-
-![img](src/pass_yield2.png)
 
 ## Citation
 

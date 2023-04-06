@@ -14,6 +14,21 @@ Predicting the future motion of road agents is a critical task in an autonomous 
 
 ## Examples
 
+The examples below demonstrate how factorization helps with reasoning in interactive leader-follower and pass-yield scenarios. FJMP is compared with a non-factorized baseline.
+
+**Leader-Follower Scenarios**
+
+![img](src/leader_follower.png)
+
+![img](src/leader_follower2.png)
+
+<br />
+
+**Pass-Yield Scenarios**
+
+![img](src/pass_yield.png)
+
+![img](src/pass_yield2.png)
 
 ## Citation
 

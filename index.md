@@ -1,8 +1,6 @@
 <br /><br />
 
-TL;DR: We propose **FJMP**, a **F**actorized **J**oint **M**otion **P**rediction framework that efficiently generates joint trajectory predictions for driving scenarios with an arbitrarily large number of agents by factorizing the joint prediction task into a sequence of marginal and conditional predictions. FJMP models the future scene interaction dynamics as a sparse directed interaction graph, where an edge denotes an explicit interaction between a pair of agents, and
-the direction of the edge is determined by their influencer-reactor relationship. We propose a mechanism to efficiently prune the interaction graph into a directed acyclic graph (DAG). Joint future trajectory predictions are then decoded as a sequence of marginal and conditional predictions according to the
-partial ordering of the DAG. We validate FJMP on the INTERACTION and Argoverse 2 datasets and demonstrate that FJMP produces more accurate and scene-consistent joint trajectory predictions than non-factorized approaches.
+TL;DR: We offer a novel approach to multi-agent joint motion prediction for autonomous driving, where we factorize joint prediction into a sequence of marginal and conditional predictions over a learned directed acyclic interaction graph. Our proposed factorization technique enhances reasoning about multi-agent interactions, leading to state-of-the-art joint prediction performance that outperforms non-factorized approaches.
 
 **Ranks 1st** on the [INTERACTION Multi-Agent Prediction Benchmark](http://challenge.interaction-dataset.com/leader-board)
 

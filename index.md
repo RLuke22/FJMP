@@ -1,5 +1,7 @@
 <br /><br />
 
+![](src/video_final.gif)
+
 TL;DR: We propose a novel approach to multi-agent joint motion prediction for autonomous driving, where we factorize joint prediction into a sequence of marginal and conditional predictions over a learned directed acyclic interaction graph. Our proposed factorization technique enhances reasoning about multi-agent interactions, leading to state-of-the-art joint prediction performance that outperforms non-factorized approaches.
 
 **Ranks 1st** on the [INTERACTION Multi-Agent Prediction Benchmark](http://challenge.interaction-dataset.com/leader-board)

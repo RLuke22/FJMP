@@ -1,0 +1,10 @@
+tqdm==4.64.1
+numpy==1.23.5
+scipy==1.9.3
+seaborn==0.12.2
+matplotlib==3.6.3
+ipdb==0.13.11
+IPython==8.8.0
+skorch==0.12.1
+pytorch-lightning==1.8.6
+captum==0.6.0

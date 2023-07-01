@@ -89,7 +89,7 @@ def main():
 
     train(config)
     val(config)
-    test(config)
+    # test(config)
 
 def test(config):
     dataset = TestDataset(config)

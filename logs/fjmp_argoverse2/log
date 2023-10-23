@@ -1,0 +1,1974 @@
+Loaded preprocessed training data.
+Loaded preprocessed training data.
+Loaded preprocessed training data.
+Loaded preprocessed training data.
+Loaded preprocessed validation data.
+Loaded preprocessed validation data.
+Loaded preprocessed validation data.
+Loaded preprocessed validation data.
+Command line arguments:
+fjmp.py
+--mode
+train
+--dataset
+argoverse2
+--config_name
+fjmp_argoverse2
+--batch_size
+32
+--max_epochs
+36
+--num_proposals
+15
+--gpu_start
+1
+--proposal_header
+--two_stage_training
+--training_stage
+1
+--ig
+dense
+--n_mapnet_layers
+4
+--focal_loss
+--gamma
+5
+--weight_0
+1.
+--weight_1
+4.
+--weight_2
+4.
+--learned_relation_header
+Model: 2057339 parameters
+Training model...
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:883.188	loss_rel:44.989	loss_prop_reg:838.199
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:594.097	loss_rel:2.556	loss_prop_reg:591.540
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:192.501	loss_rel:1.322	loss_prop_reg:191.179
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:182.136	loss_rel:1.406	loss_prop_reg:180.729
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:135.834	loss_rel:1.661	loss_prop_reg:134.173
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:101.478	loss_rel:0.967	loss_prop_reg:100.511
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:76.409	loss_rel:0.906	loss_prop_reg:75.503
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:89.517	loss_rel:1.336	loss_prop_reg:88.181
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:71.741	loss_rel:1.065	loss_prop_reg:70.676
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:97.306	loss_rel:1.764	loss_prop_reg:95.542
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:77.916	loss_rel:1.228	loss_prop_reg:76.688
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:86.948	loss_rel:1.010	loss_prop_reg:85.938
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:81.417	loss_rel:1.165	loss_prop_reg:80.253
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:76.537	loss_rel:1.159	loss_prop_reg:75.378
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:79.672	loss_rel:0.888	loss_prop_reg:78.784
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:68.427	loss_rel:1.009	loss_prop_reg:67.419
+Plotted gradient flow
+Validation data:  0.00% total_loss:75.090	loss_rel:0.738	loss_prop_reg:74.352
+Validation data:  25.64% total_loss:57.777	loss_rel:0.680	loss_prop_reg:57.097
+Validation data:  51.28% total_loss:71.700	loss_rel:1.083	loss_prop_reg:70.617
+Validation data:  76.92% total_loss:76.895	loss_rel:1.618	loss_prop_reg:75.277
+Calculating validation metrics...
+Epoch 1 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 3.066	pADE: 1.291	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.962	E-Acc 0: 0.968	E-Acc 1: 0.794	E-Acc 2: 0.707	PropNoEdge: 0.948
+Validation Edge Accuracy improved.
+Saving relation header
+Best validation edge accuracy: 0.9618
+Epoch 1 time: 970.810s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:74.253	loss_rel:1.764	loss_prop_reg:72.488
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:82.882	loss_rel:1.498	loss_prop_reg:81.384
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:78.451	loss_rel:0.730	loss_prop_reg:77.721
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:57.995	loss_rel:0.558	loss_prop_reg:57.437
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:63.544	loss_rel:0.958	loss_prop_reg:62.586
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:67.743	loss_rel:0.767	loss_prop_reg:66.976
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:81.128	loss_rel:1.472	loss_prop_reg:79.657
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:67.620	loss_rel:0.979	loss_prop_reg:66.641
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:64.334	loss_rel:0.775	loss_prop_reg:63.559
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:83.331	loss_rel:0.905	loss_prop_reg:82.426
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:67.885	loss_rel:0.992	loss_prop_reg:66.893
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:58.694	loss_rel:0.966	loss_prop_reg:57.728
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:76.839	loss_rel:1.266	loss_prop_reg:75.573
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:64.599	loss_rel:1.042	loss_prop_reg:63.557
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:55.344	loss_rel:1.005	loss_prop_reg:54.339
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:78.340	loss_rel:1.178	loss_prop_reg:77.162
+Plotted gradient flow
+Validation data:  0.00% total_loss:63.773	loss_rel:0.458	loss_prop_reg:63.315
+Validation data:  25.64% total_loss:47.119	loss_rel:0.587	loss_prop_reg:46.532
+Validation data:  51.28% total_loss:61.400	loss_rel:1.091	loss_prop_reg:60.309
+Validation data:  76.92% total_loss:71.851	loss_rel:1.349	loss_prop_reg:70.502
+Calculating validation metrics...
+Epoch 2 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.783	pADE: 1.214	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.972	E-Acc 0: 0.979	E-Acc 1: 0.729	E-Acc 2: 0.685	PropNoEdge: 0.960
+Validation Edge Accuracy improved.
+Saving relation header
+Best validation edge accuracy: 0.9716
+Epoch 2 time: 971.147s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:57.141	loss_rel:1.453	loss_prop_reg:55.688
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:52.514	loss_rel:0.898	loss_prop_reg:51.616
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:54.064	loss_rel:0.664	loss_prop_reg:53.399
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:70.014	loss_rel:0.608	loss_prop_reg:69.407
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:55.906	loss_rel:1.144	loss_prop_reg:54.762
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:61.198	loss_rel:0.733	loss_prop_reg:60.466
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:72.713	loss_rel:1.351	loss_prop_reg:71.362
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:70.664	loss_rel:0.824	loss_prop_reg:69.840
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:69.410	loss_rel:0.995	loss_prop_reg:68.415
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:68.189	loss_rel:1.264	loss_prop_reg:66.925
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:61.245	loss_rel:1.677	loss_prop_reg:59.569
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:53.134	loss_rel:1.218	loss_prop_reg:51.916
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:63.400	loss_rel:1.444	loss_prop_reg:61.956
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:61.857	loss_rel:1.079	loss_prop_reg:60.778
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:70.168	loss_rel:0.974	loss_prop_reg:69.194
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:50.570	loss_rel:0.829	loss_prop_reg:49.741
+Plotted gradient flow
+Validation data:  0.00% total_loss:60.033	loss_rel:0.600	loss_prop_reg:59.434
+Validation data:  25.64% total_loss:44.731	loss_rel:0.443	loss_prop_reg:44.288
+Validation data:  51.28% total_loss:57.699	loss_rel:1.100	loss_prop_reg:56.599
+Validation data:  76.92% total_loss:67.924	loss_rel:1.348	loss_prop_reg:66.576
+Calculating validation metrics...
+Epoch 3 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.644	pADE: 1.159	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.975	E-Acc 0: 0.981	E-Acc 1: 0.745	E-Acc 2: 0.742	PropNoEdge: 0.961
+Validation Edge Accuracy improved.
+Saving relation header
+Best validation edge accuracy: 0.9746
+Epoch 3 time: 983.627s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:68.624	loss_rel:1.930	loss_prop_reg:66.694
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:47.177	loss_rel:1.088	loss_prop_reg:46.089
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:51.823	loss_rel:0.663	loss_prop_reg:51.160
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:44.536	loss_rel:1.024	loss_prop_reg:43.512
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:56.840	loss_rel:1.069	loss_prop_reg:55.771
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:68.330	loss_rel:1.209	loss_prop_reg:67.121
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:71.748	loss_rel:1.024	loss_prop_reg:70.724
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:66.498	loss_rel:1.524	loss_prop_reg:64.974
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:56.592	loss_rel:0.892	loss_prop_reg:55.700
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:59.667	loss_rel:0.738	loss_prop_reg:58.929
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:54.705	loss_rel:1.170	loss_prop_reg:53.535
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:55.396	loss_rel:1.380	loss_prop_reg:54.016
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:53.335	loss_rel:1.681	loss_prop_reg:51.654
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:56.508	loss_rel:0.858	loss_prop_reg:55.650
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:58.350	loss_rel:0.714	loss_prop_reg:57.636
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:60.677	loss_rel:0.756	loss_prop_reg:59.921
+Plotted gradient flow
+Validation data:  0.00% total_loss:46.765	loss_rel:0.425	loss_prop_reg:46.341
+Validation data:  25.64% total_loss:40.548	loss_rel:0.433	loss_prop_reg:40.115
+Validation data:  51.28% total_loss:55.713	loss_rel:1.145	loss_prop_reg:54.567
+Validation data:  76.92% total_loss:62.652	loss_rel:1.326	loss_prop_reg:61.326
+Calculating validation metrics...
+Epoch 4 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.479	pADE: 1.078	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.978	E-Acc 0: 0.986	E-Acc 1: 0.660	E-Acc 2: 0.772	PropNoEdge: 0.967
+Validation Edge Accuracy improved.
+Saving relation header
+Best validation edge accuracy: 0.9783
+Epoch 4 time: 974.557s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:56.872	loss_rel:0.998	loss_prop_reg:55.874
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:48.869	loss_rel:0.381	loss_prop_reg:48.488
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:43.466	loss_rel:0.947	loss_prop_reg:42.519
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:59.554	loss_rel:1.064	loss_prop_reg:58.490
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:56.904	loss_rel:1.249	loss_prop_reg:55.655
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:49.951	loss_rel:0.993	loss_prop_reg:48.958
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:54.988	loss_rel:0.818	loss_prop_reg:54.170
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:34.533	loss_rel:0.704	loss_prop_reg:33.829
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:65.882	loss_rel:0.436	loss_prop_reg:65.446
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:48.361	loss_rel:1.091	loss_prop_reg:47.270
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:60.866	loss_rel:0.617	loss_prop_reg:60.249
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:49.665	loss_rel:0.686	loss_prop_reg:48.979
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:43.635	loss_rel:0.768	loss_prop_reg:42.867
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:48.613	loss_rel:0.503	loss_prop_reg:48.111
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:45.693	loss_rel:0.417	loss_prop_reg:45.276
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:68.703	loss_rel:0.587	loss_prop_reg:68.116
+Plotted gradient flow
+Validation data:  0.00% total_loss:44.121	loss_rel:0.484	loss_prop_reg:43.637
+Validation data:  25.64% total_loss:41.827	loss_rel:0.439	loss_prop_reg:41.388
+Validation data:  51.28% total_loss:53.983	loss_rel:0.919	loss_prop_reg:53.064
+Validation data:  76.92% total_loss:60.922	loss_rel:1.131	loss_prop_reg:59.791
+Calculating validation metrics...
+Epoch 5 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.450	pADE: 1.064	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.969	E-Acc 0: 0.973	E-Acc 1: 0.807	E-Acc 2: 0.837	PropNoEdge: 0.951
+Saving relation header
+Best validation edge accuracy: 0.9783
+Epoch 5 time: 986.062s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:77.312	loss_rel:1.534	loss_prop_reg:75.778
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:50.820	loss_rel:0.750	loss_prop_reg:50.070
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:30.653	loss_rel:1.008	loss_prop_reg:29.645
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:58.707	loss_rel:1.194	loss_prop_reg:57.513
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:46.454	loss_rel:1.098	loss_prop_reg:45.357
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:61.984	loss_rel:0.827	loss_prop_reg:61.157
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:52.781	loss_rel:1.000	loss_prop_reg:51.781
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:48.325	loss_rel:0.544	loss_prop_reg:47.781
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:60.705	loss_rel:0.767	loss_prop_reg:59.937
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:74.798	loss_rel:0.682	loss_prop_reg:74.116
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:62.788	loss_rel:0.788	loss_prop_reg:62.000
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:57.520	loss_rel:0.602	loss_prop_reg:56.918
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:56.068	loss_rel:0.889	loss_prop_reg:55.179
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:51.062	loss_rel:0.841	loss_prop_reg:50.221
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:64.519	loss_rel:0.745	loss_prop_reg:63.773
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:40.114	loss_rel:0.314	loss_prop_reg:39.801
+Plotted gradient flow
+Validation data:  0.00% total_loss:46.005	loss_rel:0.366	loss_prop_reg:45.639
+Validation data:  25.64% total_loss:39.021	loss_rel:0.355	loss_prop_reg:38.666
+Validation data:  51.28% total_loss:49.244	loss_rel:0.849	loss_prop_reg:48.395
+Validation data:  76.92% total_loss:55.494	loss_rel:1.071	loss_prop_reg:54.423
+Calculating validation metrics...
+Epoch 6 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.373	pADE: 1.025	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.981	E-Acc 0: 0.988	E-Acc 1: 0.714	E-Acc 2: 0.778	PropNoEdge: 0.968
+Validation Edge Accuracy improved.
+Saving relation header
+Best validation edge accuracy: 0.9814
+Epoch 6 time: 983.632s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:45.953	loss_rel:0.637	loss_prop_reg:45.315
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:44.540	loss_rel:0.420	loss_prop_reg:44.120
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:45.959	loss_rel:0.618	loss_prop_reg:45.342
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:68.488	loss_rel:0.669	loss_prop_reg:67.819
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:46.974	loss_rel:0.361	loss_prop_reg:46.613
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:48.612	loss_rel:0.435	loss_prop_reg:48.178
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:55.288	loss_rel:0.561	loss_prop_reg:54.728
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:56.301	loss_rel:0.681	loss_prop_reg:55.620
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:37.905	loss_rel:0.461	loss_prop_reg:37.444
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:60.108	loss_rel:0.444	loss_prop_reg:59.664
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:51.577	loss_rel:0.529	loss_prop_reg:51.048
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:53.483	loss_rel:1.285	loss_prop_reg:52.198
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:48.253	loss_rel:0.551	loss_prop_reg:47.702
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:51.404	loss_rel:0.920	loss_prop_reg:50.483
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:52.085	loss_rel:0.653	loss_prop_reg:51.431
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:35.739	loss_rel:0.677	loss_prop_reg:35.062
+Plotted gradient flow
+Validation data:  0.00% total_loss:41.675	loss_rel:0.348	loss_prop_reg:41.326
+Validation data:  25.64% total_loss:43.470	loss_rel:0.364	loss_prop_reg:43.106
+Validation data:  51.28% total_loss:49.389	loss_rel:0.748	loss_prop_reg:48.641
+Validation data:  76.92% total_loss:55.422	loss_rel:0.849	loss_prop_reg:54.573
+Calculating validation metrics...
+Epoch 7 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.308	pADE: 1.003	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.980	E-Acc 0: 0.985	E-Acc 1: 0.804	E-Acc 2: 0.800	PropNoEdge: 0.963
+Saving relation header
+Best validation edge accuracy: 0.9814
+Epoch 7 time: 987.635s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:56.551	loss_rel:0.633	loss_prop_reg:55.918
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:45.718	loss_rel:0.772	loss_prop_reg:44.946
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:52.427	loss_rel:1.145	loss_prop_reg:51.281
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:51.909	loss_rel:1.180	loss_prop_reg:50.729
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:48.911	loss_rel:0.751	loss_prop_reg:48.160
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:54.709	loss_rel:1.230	loss_prop_reg:53.480
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:46.478	loss_rel:0.726	loss_prop_reg:45.751
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:44.984	loss_rel:0.773	loss_prop_reg:44.211
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:43.787	loss_rel:0.568	loss_prop_reg:43.219
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:39.707	loss_rel:0.406	loss_prop_reg:39.301
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:46.654	loss_rel:0.695	loss_prop_reg:45.959
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:63.297	loss_rel:0.469	loss_prop_reg:62.828
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:57.384	loss_rel:0.448	loss_prop_reg:56.936
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:49.642	loss_rel:0.505	loss_prop_reg:49.137
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:42.405	loss_rel:1.244	loss_prop_reg:41.161
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:51.158	loss_rel:0.594	loss_prop_reg:50.564
+Plotted gradient flow
+Validation data:  0.00% total_loss:39.337	loss_rel:0.340	loss_prop_reg:38.997
+Validation data:  25.64% total_loss:38.287	loss_rel:0.390	loss_prop_reg:37.896
+Validation data:  51.28% total_loss:48.451	loss_rel:0.709	loss_prop_reg:47.742
+Validation data:  76.92% total_loss:57.159	loss_rel:0.752	loss_prop_reg:56.407
+Calculating validation metrics...
+Epoch 8 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.287	pADE: 0.993	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.983	E-Acc 0: 0.989	E-Acc 1: 0.781	E-Acc 2: 0.769	PropNoEdge: 0.967
+Validation Edge Accuracy improved.
+Saving relation header
+Best validation edge accuracy: 0.9826
+Epoch 8 time: 987.640s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:41.994	loss_rel:0.568	loss_prop_reg:41.426
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:50.127	loss_rel:0.619	loss_prop_reg:49.508
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:55.067	loss_rel:0.987	loss_prop_reg:54.080
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:46.540	loss_rel:0.611	loss_prop_reg:45.929
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:49.080	loss_rel:0.718	loss_prop_reg:48.362
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:41.746	loss_rel:0.455	loss_prop_reg:41.291
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:52.923	loss_rel:0.621	loss_prop_reg:52.303
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:44.841	loss_rel:0.506	loss_prop_reg:44.336
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:45.784	loss_rel:0.431	loss_prop_reg:45.353
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:47.587	loss_rel:0.680	loss_prop_reg:46.907
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:46.847	loss_rel:0.496	loss_prop_reg:46.351
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:44.449	loss_rel:0.459	loss_prop_reg:43.990
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:52.223	loss_rel:0.542	loss_prop_reg:51.681
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:50.676	loss_rel:0.846	loss_prop_reg:49.830
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:58.050	loss_rel:0.332	loss_prop_reg:57.718
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:59.538	loss_rel:1.163	loss_prop_reg:58.375
+Plotted gradient flow
+Validation data:  0.00% total_loss:35.080	loss_rel:0.340	loss_prop_reg:34.740
+Validation data:  25.64% total_loss:33.897	loss_rel:0.360	loss_prop_reg:33.537
+Validation data:  51.28% total_loss:49.371	loss_rel:0.697	loss_prop_reg:48.674
+Validation data:  76.92% total_loss:51.107	loss_rel:0.718	loss_prop_reg:50.389
+Calculating validation metrics...
+Epoch 9 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.156	pADE: 0.939	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.981	E-Acc 0: 0.986	E-Acc 1: 0.802	E-Acc 2: 0.826	PropNoEdge: 0.964
+Saving relation header
+Best validation edge accuracy: 0.9826
+Epoch 9 time: 988.200s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:38.380	loss_rel:0.543	loss_prop_reg:37.837
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:59.246	loss_rel:1.099	loss_prop_reg:58.147
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:34.900	loss_rel:0.463	loss_prop_reg:34.436
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:57.504	loss_rel:0.789	loss_prop_reg:56.716
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:46.621	loss_rel:0.395	loss_prop_reg:46.226
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:49.884	loss_rel:2.138	loss_prop_reg:47.746
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:55.001	loss_rel:0.510	loss_prop_reg:54.491
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:42.388	loss_rel:0.534	loss_prop_reg:41.853
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:47.786	loss_rel:1.074	loss_prop_reg:46.712
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:35.996	loss_rel:0.479	loss_prop_reg:35.517
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:39.982	loss_rel:1.614	loss_prop_reg:38.369
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:56.055	loss_rel:0.591	loss_prop_reg:55.463
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:36.298	loss_rel:0.658	loss_prop_reg:35.640
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:49.691	loss_rel:0.436	loss_prop_reg:49.255
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:43.919	loss_rel:1.068	loss_prop_reg:42.852
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:35.529	loss_rel:0.464	loss_prop_reg:35.066
+Plotted gradient flow
+Validation data:  0.00% total_loss:36.207	loss_rel:0.303	loss_prop_reg:35.903
+Validation data:  25.64% total_loss:33.663	loss_rel:0.340	loss_prop_reg:33.323
+Validation data:  51.28% total_loss:44.048	loss_rel:0.632	loss_prop_reg:43.416
+Validation data:  76.92% total_loss:52.381	loss_rel:0.778	loss_prop_reg:51.603
+Calculating validation metrics...
+Epoch 10 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.137	pADE: 0.922	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.982	E-Acc 0: 0.986	E-Acc 1: 0.833	E-Acc 2: 0.814	PropNoEdge: 0.964
+Saving relation header
+Best validation edge accuracy: 0.9826
+Epoch 10 time: 981.252s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:52.806	loss_rel:0.438	loss_prop_reg:52.368
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:44.207	loss_rel:1.003	loss_prop_reg:43.204
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:51.469	loss_rel:0.737	loss_prop_reg:50.731
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:61.818	loss_rel:0.582	loss_prop_reg:61.236
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:42.820	loss_rel:0.520	loss_prop_reg:42.300
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:37.643	loss_rel:0.494	loss_prop_reg:37.149
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:62.271	loss_rel:0.509	loss_prop_reg:61.761
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:46.532	loss_rel:0.525	loss_prop_reg:46.007
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:39.656	loss_rel:0.925	loss_prop_reg:38.730
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:52.572	loss_rel:0.527	loss_prop_reg:52.045
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:37.024	loss_rel:0.984	loss_prop_reg:36.039
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:45.656	loss_rel:0.389	loss_prop_reg:45.266
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:35.717	loss_rel:0.468	loss_prop_reg:35.249
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:48.808	loss_rel:0.374	loss_prop_reg:48.434
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:53.273	loss_rel:0.562	loss_prop_reg:52.711
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:51.823	loss_rel:0.358	loss_prop_reg:51.465
+Plotted gradient flow
+Validation data:  0.00% total_loss:37.668	loss_rel:0.271	loss_prop_reg:37.397
+Validation data:  25.64% total_loss:35.528	loss_rel:0.220	loss_prop_reg:35.308
+Validation data:  51.28% total_loss:47.143	loss_rel:0.660	loss_prop_reg:46.483
+Validation data:  76.92% total_loss:51.427	loss_rel:0.629	loss_prop_reg:50.799
+Calculating validation metrics...
+Epoch 11 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.164	pADE: 0.929	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.981	E-Acc 0: 0.985	E-Acc 1: 0.818	E-Acc 2: 0.852	PropNoEdge: 0.962
+Saving relation header
+Best validation edge accuracy: 0.9826
+Epoch 11 time: 983.719s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:46.431	loss_rel:0.561	loss_prop_reg:45.870
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:45.107	loss_rel:0.499	loss_prop_reg:44.608
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:47.552	loss_rel:0.667	loss_prop_reg:46.885
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:45.838	loss_rel:0.448	loss_prop_reg:45.390
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:45.132	loss_rel:1.480	loss_prop_reg:43.652
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:47.005	loss_rel:0.809	loss_prop_reg:46.195
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:56.830	loss_rel:0.496	loss_prop_reg:56.334
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:40.080	loss_rel:0.574	loss_prop_reg:39.506
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:39.077	loss_rel:0.494	loss_prop_reg:38.582
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:52.992	loss_rel:0.404	loss_prop_reg:52.588
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:56.205	loss_rel:0.625	loss_prop_reg:55.580
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:36.176	loss_rel:0.555	loss_prop_reg:35.621
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:38.107	loss_rel:0.395	loss_prop_reg:37.712
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:45.254	loss_rel:0.350	loss_prop_reg:44.904
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:38.672	loss_rel:0.967	loss_prop_reg:37.705
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:33.812	loss_rel:0.503	loss_prop_reg:33.308
+Plotted gradient flow
+Validation data:  0.00% total_loss:35.292	loss_rel:0.292	loss_prop_reg:35.000
+Validation data:  25.64% total_loss:32.855	loss_rel:0.248	loss_prop_reg:32.606
+Validation data:  51.28% total_loss:45.059	loss_rel:0.614	loss_prop_reg:44.445
+Validation data:  76.92% total_loss:50.371	loss_rel:0.482	loss_prop_reg:49.889
+Calculating validation metrics...
+Epoch 12 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.092	pADE: 0.897	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.984	E-Acc 0: 0.989	E-Acc 1: 0.775	E-Acc 2: 0.827	PropNoEdge: 0.968
+Validation Edge Accuracy improved.
+Saving relation header
+Best validation edge accuracy: 0.9842
+Epoch 12 time: 980.185s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:51.552	loss_rel:0.810	loss_prop_reg:50.742
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:36.329	loss_rel:0.803	loss_prop_reg:35.526
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:47.107	loss_rel:0.689	loss_prop_reg:46.419
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:43.961	loss_rel:0.573	loss_prop_reg:43.388
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:44.291	loss_rel:0.389	loss_prop_reg:43.902
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:30.944	loss_rel:0.662	loss_prop_reg:30.282
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:48.548	loss_rel:0.818	loss_prop_reg:47.730
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:44.475	loss_rel:0.462	loss_prop_reg:44.013
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:45.037	loss_rel:0.528	loss_prop_reg:44.509
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:51.410	loss_rel:0.421	loss_prop_reg:50.989
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:42.398	loss_rel:0.439	loss_prop_reg:41.960
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:42.304	loss_rel:0.538	loss_prop_reg:41.766
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:35.665	loss_rel:0.670	loss_prop_reg:34.995
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:38.354	loss_rel:0.916	loss_prop_reg:37.438
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:42.065	loss_rel:0.467	loss_prop_reg:41.598
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:44.811	loss_rel:0.491	loss_prop_reg:44.320
+Plotted gradient flow
+Validation data:  0.00% total_loss:37.310	loss_rel:0.246	loss_prop_reg:37.064
+Validation data:  25.64% total_loss:32.856	loss_rel:0.217	loss_prop_reg:32.639
+Validation data:  51.28% total_loss:45.508	loss_rel:0.577	loss_prop_reg:44.931
+Validation data:  76.92% total_loss:51.431	loss_rel:0.536	loss_prop_reg:50.895
+Calculating validation metrics...
+Epoch 13 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.078	pADE: 0.903	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.984	E-Acc 0: 0.989	E-Acc 1: 0.814	E-Acc 2: 0.811	PropNoEdge: 0.967
+Saving relation header
+Best validation edge accuracy: 0.9842
+Epoch 13 time: 985.232s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:47.825	loss_rel:0.228	loss_prop_reg:47.597
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:37.094	loss_rel:0.329	loss_prop_reg:36.765
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:38.564	loss_rel:0.724	loss_prop_reg:37.840
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:32.783	loss_rel:0.558	loss_prop_reg:32.225
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:47.069	loss_rel:0.488	loss_prop_reg:46.580
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:48.144	loss_rel:0.498	loss_prop_reg:47.646
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:35.547	loss_rel:0.441	loss_prop_reg:35.106
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:41.449	loss_rel:0.464	loss_prop_reg:40.985
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:33.736	loss_rel:0.515	loss_prop_reg:33.221
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:46.628	loss_rel:0.528	loss_prop_reg:46.099
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:44.585	loss_rel:0.686	loss_prop_reg:43.898
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:44.174	loss_rel:0.842	loss_prop_reg:43.332
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:41.253	loss_rel:0.546	loss_prop_reg:40.707
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:46.056	loss_rel:0.462	loss_prop_reg:45.594
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:39.253	loss_rel:0.221	loss_prop_reg:39.032
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:37.279	loss_rel:0.361	loss_prop_reg:36.918
+Plotted gradient flow
+Validation data:  0.00% total_loss:37.241	loss_rel:0.278	loss_prop_reg:36.963
+Validation data:  25.64% total_loss:31.127	loss_rel:0.211	loss_prop_reg:30.916
+Validation data:  51.28% total_loss:42.356	loss_rel:0.985	loss_prop_reg:41.371
+Validation data:  76.92% total_loss:48.713	loss_rel:0.701	loss_prop_reg:48.011
+Calculating validation metrics...
+Epoch 14 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.061	pADE: 0.886	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.981	E-Acc 0: 0.986	E-Acc 1: 0.823	E-Acc 2: 0.844	PropNoEdge: 0.963
+Saving relation header
+Best validation edge accuracy: 0.9842
+Epoch 14 time: 984.808s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:49.681	loss_rel:0.304	loss_prop_reg:49.377
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:39.801	loss_rel:0.526	loss_prop_reg:39.275
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:42.176	loss_rel:0.265	loss_prop_reg:41.911
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:40.202	loss_rel:0.338	loss_prop_reg:39.864
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:40.360	loss_rel:0.680	loss_prop_reg:39.680
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:48.157	loss_rel:1.338	loss_prop_reg:46.818
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:55.642	loss_rel:0.284	loss_prop_reg:55.358
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:43.824	loss_rel:0.348	loss_prop_reg:43.476
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:46.012	loss_rel:0.525	loss_prop_reg:45.486
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:33.629	loss_rel:0.375	loss_prop_reg:33.253
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:35.465	loss_rel:0.448	loss_prop_reg:35.018
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:43.290	loss_rel:0.360	loss_prop_reg:42.930
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:50.059	loss_rel:0.610	loss_prop_reg:49.449
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:36.801	loss_rel:0.561	loss_prop_reg:36.240
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:53.195	loss_rel:0.396	loss_prop_reg:52.799
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:50.338	loss_rel:0.533	loss_prop_reg:49.805
+Plotted gradient flow
+Validation data:  0.00% total_loss:37.295	loss_rel:0.263	loss_prop_reg:37.033
+Validation data:  25.64% total_loss:38.023	loss_rel:0.222	loss_prop_reg:37.801
+Validation data:  51.28% total_loss:44.401	loss_rel:0.984	loss_prop_reg:43.417
+Validation data:  76.92% total_loss:47.543	loss_rel:0.802	loss_prop_reg:46.742
+Calculating validation metrics...
+Epoch 15 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.061	pADE: 0.882	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.984	E-Acc 0: 0.989	E-Acc 1: 0.800	E-Acc 2: 0.832	PropNoEdge: 0.967
+Validation Edge Accuracy improved.
+Saving relation header
+Best validation edge accuracy: 0.9844
+Epoch 15 time: 978.644s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:36.323	loss_rel:1.103	loss_prop_reg:35.220
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:40.762	loss_rel:0.739	loss_prop_reg:40.023
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:44.409	loss_rel:0.387	loss_prop_reg:44.022
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:41.041	loss_rel:0.721	loss_prop_reg:40.320
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:36.481	loss_rel:0.564	loss_prop_reg:35.917
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:33.175	loss_rel:0.406	loss_prop_reg:32.769
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:39.080	loss_rel:0.332	loss_prop_reg:38.748
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:36.739	loss_rel:0.490	loss_prop_reg:36.249
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:44.588	loss_rel:0.481	loss_prop_reg:44.107
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:42.977	loss_rel:0.737	loss_prop_reg:42.240
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:38.451	loss_rel:0.444	loss_prop_reg:38.007
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:49.292	loss_rel:0.392	loss_prop_reg:48.900
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:56.574	loss_rel:0.498	loss_prop_reg:56.076
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:36.163	loss_rel:0.467	loss_prop_reg:35.696
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:54.897	loss_rel:0.643	loss_prop_reg:54.254
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:45.817	loss_rel:0.329	loss_prop_reg:45.489
+Plotted gradient flow
+Validation data:  0.00% total_loss:38.155	loss_rel:0.316	loss_prop_reg:37.839
+Validation data:  25.64% total_loss:32.565	loss_rel:0.313	loss_prop_reg:32.251
+Validation data:  51.28% total_loss:45.485	loss_rel:1.030	loss_prop_reg:44.455
+Validation data:  76.92% total_loss:51.651	loss_rel:0.529	loss_prop_reg:51.122
+Calculating validation metrics...
+Epoch 16 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.030	pADE: 0.887	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.984	E-Acc 0: 0.988	E-Acc 1: 0.836	E-Acc 2: 0.820	PropNoEdge: 0.966
+Saving relation header
+Best validation edge accuracy: 0.9844
+Epoch 16 time: 988.836s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:43.298	loss_rel:0.491	loss_prop_reg:42.807
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:26.470	loss_rel:0.494	loss_prop_reg:25.976
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:37.412	loss_rel:0.444	loss_prop_reg:36.968
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:40.100	loss_rel:0.763	loss_prop_reg:39.337
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:45.204	loss_rel:0.269	loss_prop_reg:44.935
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:48.196	loss_rel:0.360	loss_prop_reg:47.837
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:41.475	loss_rel:0.570	loss_prop_reg:40.905
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:40.186	loss_rel:0.487	loss_prop_reg:39.699
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:43.185	loss_rel:0.566	loss_prop_reg:42.619
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:42.615	loss_rel:0.292	loss_prop_reg:42.324
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:42.014	loss_rel:0.544	loss_prop_reg:41.470
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:52.518	loss_rel:0.942	loss_prop_reg:51.576
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:48.700	loss_rel:0.749	loss_prop_reg:47.952
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:34.905	loss_rel:0.274	loss_prop_reg:34.631
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:39.112	loss_rel:0.339	loss_prop_reg:38.773
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:33.984	loss_rel:0.615	loss_prop_reg:33.369
+Plotted gradient flow
+Validation data:  0.00% total_loss:31.773	loss_rel:0.286	loss_prop_reg:31.487
+Validation data:  25.64% total_loss:33.839	loss_rel:0.267	loss_prop_reg:33.573
+Validation data:  51.28% total_loss:44.428	loss_rel:0.797	loss_prop_reg:43.631
+Validation data:  76.92% total_loss:51.267	loss_rel:0.770	loss_prop_reg:50.497
+Calculating validation metrics...
+Epoch 17 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.054	pADE: 0.889	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.984	E-Acc 0: 0.988	E-Acc 1: 0.822	E-Acc 2: 0.838	PropNoEdge: 0.965
+Saving relation header
+Best validation edge accuracy: 0.9844
+Epoch 17 time: 983.614s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:44.120	loss_rel:0.682	loss_prop_reg:43.438
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:30.897	loss_rel:0.244	loss_prop_reg:30.653
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:32.088	loss_rel:0.280	loss_prop_reg:31.808
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:32.459	loss_rel:0.432	loss_prop_reg:32.027
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:37.155	loss_rel:0.430	loss_prop_reg:36.726
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:47.953	loss_rel:0.723	loss_prop_reg:47.230
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:31.192	loss_rel:0.448	loss_prop_reg:30.744
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:38.976	loss_rel:0.596	loss_prop_reg:38.381
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:36.301	loss_rel:0.345	loss_prop_reg:35.955
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:34.982	loss_rel:0.486	loss_prop_reg:34.496
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:45.547	loss_rel:0.429	loss_prop_reg:45.118
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:35.489	loss_rel:0.477	loss_prop_reg:35.012
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:50.243	loss_rel:0.434	loss_prop_reg:49.809
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:39.234	loss_rel:0.384	loss_prop_reg:38.849
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:34.376	loss_rel:0.495	loss_prop_reg:33.881
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:41.522	loss_rel:0.631	loss_prop_reg:40.891
+Plotted gradient flow
+Validation data:  0.00% total_loss:34.082	loss_rel:0.329	loss_prop_reg:33.752
+Validation data:  25.64% total_loss:30.548	loss_rel:0.326	loss_prop_reg:30.222
+Validation data:  51.28% total_loss:37.252	loss_rel:0.619	loss_prop_reg:36.633
+Validation data:  76.92% total_loss:53.354	loss_rel:0.783	loss_prop_reg:52.570
+Calculating validation metrics...
+Epoch 18 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.059	pADE: 0.882	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.981	E-Acc 0: 0.985	E-Acc 1: 0.847	E-Acc 2: 0.859	PropNoEdge: 0.961
+Saving relation header
+Best validation edge accuracy: 0.9844
+Epoch 18 time: 988.796s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:43.614	loss_rel:0.690	loss_prop_reg:42.924
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:41.798	loss_rel:0.449	loss_prop_reg:41.349
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:32.630	loss_rel:0.351	loss_prop_reg:32.280
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:45.844	loss_rel:0.330	loss_prop_reg:45.514
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:39.308	loss_rel:0.429	loss_prop_reg:38.879
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:26.258	loss_rel:0.483	loss_prop_reg:25.775
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:27.016	loss_rel:0.258	loss_prop_reg:26.758
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:45.725	loss_rel:0.605	loss_prop_reg:45.120
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:33.249	loss_rel:0.403	loss_prop_reg:32.845
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:48.006	loss_rel:0.587	loss_prop_reg:47.419
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:43.014	loss_rel:0.288	loss_prop_reg:42.726
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:35.729	loss_rel:0.681	loss_prop_reg:35.048
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:41.910	loss_rel:0.312	loss_prop_reg:41.598
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:45.664	loss_rel:0.405	loss_prop_reg:45.258
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:44.599	loss_rel:0.190	loss_prop_reg:44.409
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:52.640	loss_rel:0.515	loss_prop_reg:52.124
+Plotted gradient flow
+Validation data:  0.00% total_loss:34.288	loss_rel:0.303	loss_prop_reg:33.986
+Validation data:  25.64% total_loss:32.464	loss_rel:0.258	loss_prop_reg:32.206
+Validation data:  51.28% total_loss:42.393	loss_rel:0.617	loss_prop_reg:41.776
+Validation data:  76.92% total_loss:50.155	loss_rel:0.545	loss_prop_reg:49.610
+Calculating validation metrics...
+Epoch 19 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.017	pADE: 0.862	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.985	E-Acc 0: 0.990	E-Acc 1: 0.839	E-Acc 2: 0.777	PropNoEdge: 0.967
+Validation Edge Accuracy improved.
+Saving relation header
+Best validation edge accuracy: 0.9847
+Epoch 19 time: 985.220s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:41.709	loss_rel:0.389	loss_prop_reg:41.320
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:44.982	loss_rel:0.529	loss_prop_reg:44.454
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:29.632	loss_rel:0.455	loss_prop_reg:29.177
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:48.594	loss_rel:0.294	loss_prop_reg:48.300
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:29.676	loss_rel:0.192	loss_prop_reg:29.484
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:38.866	loss_rel:0.232	loss_prop_reg:38.634
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:39.550	loss_rel:0.348	loss_prop_reg:39.202
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:61.791	loss_rel:0.608	loss_prop_reg:61.183
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:42.809	loss_rel:0.642	loss_prop_reg:42.168
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:35.696	loss_rel:0.749	loss_prop_reg:34.947
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:28.810	loss_rel:0.295	loss_prop_reg:28.515
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:41.600	loss_rel:0.364	loss_prop_reg:41.236
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:35.977	loss_rel:0.366	loss_prop_reg:35.611
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:47.126	loss_rel:0.451	loss_prop_reg:46.675
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:40.906	loss_rel:0.334	loss_prop_reg:40.573
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:35.115	loss_rel:0.324	loss_prop_reg:34.791
+Plotted gradient flow
+Validation data:  0.00% total_loss:34.010	loss_rel:0.246	loss_prop_reg:33.765
+Validation data:  25.64% total_loss:30.125	loss_rel:0.208	loss_prop_reg:29.917
+Validation data:  51.28% total_loss:38.674	loss_rel:0.497	loss_prop_reg:38.176
+Validation data:  76.92% total_loss:48.823	loss_rel:0.760	loss_prop_reg:48.063
+Calculating validation metrics...
+Epoch 20 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 1.970	pADE: 0.849	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.984	E-Acc 0: 0.989	E-Acc 1: 0.827	E-Acc 2: 0.828	PropNoEdge: 0.966
+Saving relation header
+Best validation edge accuracy: 0.9847
+Epoch 20 time: 985.633s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:35.926	loss_rel:0.514	loss_prop_reg:35.412
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:40.646	loss_rel:0.417	loss_prop_reg:40.229
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:34.981	loss_rel:0.268	loss_prop_reg:34.712
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:38.921	loss_rel:0.192	loss_prop_reg:38.730
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:37.168	loss_rel:0.429	loss_prop_reg:36.739
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:29.407	loss_rel:0.279	loss_prop_reg:29.128
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:40.981	loss_rel:0.374	loss_prop_reg:40.607
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:43.778	loss_rel:0.850	loss_prop_reg:42.928
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:33.655	loss_rel:0.431	loss_prop_reg:33.225
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:40.081	loss_rel:0.364	loss_prop_reg:39.716
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:45.085	loss_rel:0.410	loss_prop_reg:44.676
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:50.918	loss_rel:0.626	loss_prop_reg:50.293
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:42.718	loss_rel:0.384	loss_prop_reg:42.333
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:47.784	loss_rel:0.440	loss_prop_reg:47.345
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:28.924	loss_rel:0.341	loss_prop_reg:28.583
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:44.612	loss_rel:0.715	loss_prop_reg:43.897
+Plotted gradient flow
+Validation data:  0.00% total_loss:35.044	loss_rel:0.282	loss_prop_reg:34.762
+Validation data:  25.64% total_loss:31.759	loss_rel:0.231	loss_prop_reg:31.528
+Validation data:  51.28% total_loss:41.665	loss_rel:0.801	loss_prop_reg:40.864
+Validation data:  76.92% total_loss:49.569	loss_rel:0.414	loss_prop_reg:49.154
+Calculating validation metrics...
+Epoch 21 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 1.978	pADE: 0.872	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.987	E-Acc 0: 0.992	E-Acc 1: 0.742	E-Acc 2: 0.830	PropNoEdge: 0.971
+Validation Edge Accuracy improved.
+Saving relation header
+Best validation edge accuracy: 0.9867
+Epoch 21 time: 983.473s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:47.211	loss_rel:0.357	loss_prop_reg:46.854
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:44.032	loss_rel:0.448	loss_prop_reg:43.584
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:45.505	loss_rel:0.658	loss_prop_reg:44.847
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:32.359	loss_rel:0.305	loss_prop_reg:32.054
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:46.169	loss_rel:0.404	loss_prop_reg:45.766
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:44.549	loss_rel:0.446	loss_prop_reg:44.103
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:46.611	loss_rel:0.462	loss_prop_reg:46.149
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:33.611	loss_rel:0.322	loss_prop_reg:33.289
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:47.119	loss_rel:0.449	loss_prop_reg:46.670
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:45.976	loss_rel:0.873	loss_prop_reg:45.103
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:53.823	loss_rel:0.732	loss_prop_reg:53.092
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:23.213	loss_rel:0.385	loss_prop_reg:22.828
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:28.067	loss_rel:0.236	loss_prop_reg:27.831
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:35.284	loss_rel:0.521	loss_prop_reg:34.763
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:34.689	loss_rel:0.367	loss_prop_reg:34.322
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:35.061	loss_rel:0.557	loss_prop_reg:34.504
+Plotted gradient flow
+Validation data:  0.00% total_loss:32.846	loss_rel:0.243	loss_prop_reg:32.603
+Validation data:  25.64% total_loss:34.625	loss_rel:0.204	loss_prop_reg:34.421
+Validation data:  51.28% total_loss:41.996	loss_rel:0.656	loss_prop_reg:41.340
+Validation data:  76.92% total_loss:50.253	loss_rel:0.734	loss_prop_reg:49.520
+Calculating validation metrics...
+Epoch 22 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 1.955	pADE: 0.852	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.986	E-Acc 0: 0.990	E-Acc 1: 0.836	E-Acc 2: 0.810	PropNoEdge: 0.968
+Saving relation header
+Best validation edge accuracy: 0.9867
+Epoch 22 time: 988.315s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:40.275	loss_rel:0.237	loss_prop_reg:40.038
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:31.826	loss_rel:0.205	loss_prop_reg:31.621
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:40.735	loss_rel:0.317	loss_prop_reg:40.419
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:38.503	loss_rel:0.372	loss_prop_reg:38.131
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:29.690	loss_rel:0.453	loss_prop_reg:29.237
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:38.836	loss_rel:0.410	loss_prop_reg:38.425
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:45.647	loss_rel:0.270	loss_prop_reg:45.377
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:31.984	loss_rel:0.279	loss_prop_reg:31.705
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:34.935	loss_rel:0.408	loss_prop_reg:34.527
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:34.621	loss_rel:0.212	loss_prop_reg:34.409
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:37.229	loss_rel:0.753	loss_prop_reg:36.476
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:48.256	loss_rel:0.373	loss_prop_reg:47.883
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:37.455	loss_rel:1.077	loss_prop_reg:36.378
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:33.676	loss_rel:0.598	loss_prop_reg:33.078
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:38.817	loss_rel:0.622	loss_prop_reg:38.196
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:36.490	loss_rel:0.918	loss_prop_reg:35.572
+Plotted gradient flow
+Validation data:  0.00% total_loss:34.424	loss_rel:0.317	loss_prop_reg:34.107
+Validation data:  25.64% total_loss:29.078	loss_rel:0.218	loss_prop_reg:28.861
+Validation data:  51.28% total_loss:39.637	loss_rel:0.643	loss_prop_reg:38.994
+Validation data:  76.92% total_loss:46.176	loss_rel:0.456	loss_prop_reg:45.720
+Calculating validation metrics...
+Epoch 23 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 1.960	pADE: 0.846	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.984	E-Acc 0: 0.987	E-Acc 1: 0.859	E-Acc 2: 0.845	PropNoEdge: 0.964
+Saving relation header
+Best validation edge accuracy: 0.9867
+Epoch 23 time: 984.926s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:28.868	loss_rel:0.548	loss_prop_reg:28.319
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:46.261	loss_rel:0.321	loss_prop_reg:45.940
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:38.230	loss_rel:0.548	loss_prop_reg:37.683
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:28.833	loss_rel:0.418	loss_prop_reg:28.415
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:37.492	loss_rel:0.311	loss_prop_reg:37.180
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:37.150	loss_rel:0.628	loss_prop_reg:36.522
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:39.797	loss_rel:0.546	loss_prop_reg:39.251
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:32.965	loss_rel:0.286	loss_prop_reg:32.678
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:32.992	loss_rel:0.360	loss_prop_reg:32.633
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:39.818	loss_rel:0.538	loss_prop_reg:39.280
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:40.717	loss_rel:0.622	loss_prop_reg:40.095
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:27.565	loss_rel:0.249	loss_prop_reg:27.316
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:36.606	loss_rel:0.233	loss_prop_reg:36.373
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:41.880	loss_rel:0.557	loss_prop_reg:41.323
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:22.861	loss_rel:0.242	loss_prop_reg:22.619
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:35.394	loss_rel:0.281	loss_prop_reg:35.114
+Plotted gradient flow
+Validation data:  0.00% total_loss:33.672	loss_rel:0.271	loss_prop_reg:33.401
+Validation data:  25.64% total_loss:32.219	loss_rel:0.233	loss_prop_reg:31.987
+Validation data:  51.28% total_loss:47.296	loss_rel:0.693	loss_prop_reg:46.603
+Validation data:  76.92% total_loss:48.685	loss_rel:0.833	loss_prop_reg:47.852
+Calculating validation metrics...
+Epoch 24 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 1.949	pADE: 0.828	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.988	E-Acc 0: 0.993	E-Acc 1: 0.772	E-Acc 2: 0.799	PropNoEdge: 0.972
+Validation Edge Accuracy improved.
+Saving relation header
+Best validation edge accuracy: 0.9876
+Epoch 24 time: 981.747s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:31.490	loss_rel:0.334	loss_prop_reg:31.156
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:38.019	loss_rel:0.418	loss_prop_reg:37.601
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:34.330	loss_rel:0.467	loss_prop_reg:33.863
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:27.656	loss_rel:0.353	loss_prop_reg:27.303
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:27.928	loss_rel:0.520	loss_prop_reg:27.408
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:31.280	loss_rel:0.384	loss_prop_reg:30.895
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:33.504	loss_rel:0.462	loss_prop_reg:33.041
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:36.597	loss_rel:0.418	loss_prop_reg:36.179
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:36.001	loss_rel:0.324	loss_prop_reg:35.676
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:40.369	loss_rel:0.385	loss_prop_reg:39.985
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:35.521	loss_rel:0.320	loss_prop_reg:35.201
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:32.007	loss_rel:0.459	loss_prop_reg:31.549
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:35.436	loss_rel:0.211	loss_prop_reg:35.225
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:35.051	loss_rel:0.357	loss_prop_reg:34.695
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:36.959	loss_rel:0.786	loss_prop_reg:36.173
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:39.759	loss_rel:1.023	loss_prop_reg:38.735
+Plotted gradient flow
+Validation data:  0.00% total_loss:36.871	loss_rel:0.421	loss_prop_reg:36.450
+Validation data:  25.64% total_loss:34.900	loss_rel:0.236	loss_prop_reg:34.665
+Validation data:  51.28% total_loss:45.411	loss_rel:0.486	loss_prop_reg:44.925
+Validation data:  76.92% total_loss:43.560	loss_rel:0.905	loss_prop_reg:42.655
+Calculating validation metrics...
+Epoch 25 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 2.028	pADE: 0.900	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.984	E-Acc 0: 0.988	E-Acc 1: 0.832	E-Acc 2: 0.833	PropNoEdge: 0.966
+Saving relation header
+Best validation edge accuracy: 0.9876
+Epoch 25 time: 988.638s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:38.540	loss_rel:0.336	loss_prop_reg:38.204
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:41.590	loss_rel:0.372	loss_prop_reg:41.218
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:29.180	loss_rel:0.422	loss_prop_reg:28.757
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:30.596	loss_rel:0.357	loss_prop_reg:30.239
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:34.533	loss_rel:0.298	loss_prop_reg:34.235
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:41.952	loss_rel:0.487	loss_prop_reg:41.465
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:51.265	loss_rel:0.930	loss_prop_reg:50.335
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:33.574	loss_rel:0.358	loss_prop_reg:33.216
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:33.763	loss_rel:0.501	loss_prop_reg:33.262
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:30.396	loss_rel:0.442	loss_prop_reg:29.954
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:36.579	loss_rel:0.420	loss_prop_reg:36.159
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:55.439	loss_rel:0.395	loss_prop_reg:55.044
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:42.188	loss_rel:0.466	loss_prop_reg:41.722
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:35.854	loss_rel:0.719	loss_prop_reg:35.135
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:35.040	loss_rel:0.502	loss_prop_reg:34.537
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:37.336	loss_rel:0.762	loss_prop_reg:36.574
+Plotted gradient flow
+Validation data:  0.00% total_loss:34.388	loss_rel:0.314	loss_prop_reg:34.074
+Validation data:  25.64% total_loss:28.771	loss_rel:0.238	loss_prop_reg:28.533
+Validation data:  51.28% total_loss:37.952	loss_rel:0.595	loss_prop_reg:37.356
+Validation data:  76.92% total_loss:42.660	loss_rel:0.652	loss_prop_reg:42.009
+Calculating validation metrics...
+Epoch 26 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 1.900	pADE: 0.828	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.986	E-Acc 0: 0.991	E-Acc 1: 0.827	E-Acc 2: 0.810	PropNoEdge: 0.969
+Saving relation header
+Best validation edge accuracy: 0.9876
+Epoch 26 time: 980.909s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:29.365	loss_rel:0.449	loss_prop_reg:28.916
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:48.924	loss_rel:0.423	loss_prop_reg:48.501
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:46.117	loss_rel:0.282	loss_prop_reg:45.835
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:41.319	loss_rel:0.327	loss_prop_reg:40.992
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:37.530	loss_rel:0.448	loss_prop_reg:37.082
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:33.048	loss_rel:0.323	loss_prop_reg:32.725
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:40.163	loss_rel:0.510	loss_prop_reg:39.654
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:45.885	loss_rel:0.814	loss_prop_reg:45.072
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:40.060	loss_rel:0.495	loss_prop_reg:39.565
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:35.737	loss_rel:0.658	loss_prop_reg:35.079
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:43.401	loss_rel:0.456	loss_prop_reg:42.944
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:30.076	loss_rel:0.573	loss_prop_reg:29.504
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:41.345	loss_rel:0.546	loss_prop_reg:40.799
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:42.218	loss_rel:0.393	loss_prop_reg:41.825
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:27.931	loss_rel:0.347	loss_prop_reg:27.584
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:34.362	loss_rel:0.497	loss_prop_reg:33.865
+Plotted gradient flow
+Validation data:  0.00% total_loss:31.761	loss_rel:0.305	loss_prop_reg:31.456
+Validation data:  25.64% total_loss:29.520	loss_rel:0.211	loss_prop_reg:29.309
+Validation data:  51.28% total_loss:36.588	loss_rel:0.700	loss_prop_reg:35.889
+Validation data:  76.92% total_loss:43.956	loss_rel:0.627	loss_prop_reg:43.329
+Calculating validation metrics...
+Epoch 27 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 1.920	pADE: 0.834	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.986	E-Acc 0: 0.990	E-Acc 1: 0.843	E-Acc 2: 0.815	PropNoEdge: 0.968
+Saving relation header
+Best validation edge accuracy: 0.9876
+Epoch 27 time: 981.707s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:28.272	loss_rel:0.241	loss_prop_reg:28.032
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:43.593	loss_rel:0.588	loss_prop_reg:43.004
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:38.049	loss_rel:0.547	loss_prop_reg:37.502
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:34.628	loss_rel:0.272	loss_prop_reg:34.356
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:35.618	loss_rel:0.378	loss_prop_reg:35.239
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:34.630	loss_rel:0.214	loss_prop_reg:34.416
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:37.458	loss_rel:0.488	loss_prop_reg:36.970
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:43.248	loss_rel:0.464	loss_prop_reg:42.784
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:43.295	loss_rel:0.752	loss_prop_reg:42.543
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:32.272	loss_rel:0.257	loss_prop_reg:32.015
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:28.726	loss_rel:0.352	loss_prop_reg:28.374
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:36.217	loss_rel:0.365	loss_prop_reg:35.853
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:34.046	loss_rel:0.962	loss_prop_reg:33.085
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:35.767	loss_rel:0.503	loss_prop_reg:35.264
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:28.305	loss_rel:0.358	loss_prop_reg:27.947
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:41.483	loss_rel:0.446	loss_prop_reg:41.037
+Plotted gradient flow
+Validation data:  0.00% total_loss:31.607	loss_rel:0.261	loss_prop_reg:31.346
+Validation data:  25.64% total_loss:28.688	loss_rel:0.192	loss_prop_reg:28.497
+Validation data:  51.28% total_loss:40.367	loss_rel:0.770	loss_prop_reg:39.597
+Validation data:  76.92% total_loss:48.417	loss_rel:0.815	loss_prop_reg:47.602
+Calculating validation metrics...
+Epoch 28 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 1.910	pADE: 0.827	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.986	E-Acc 0: 0.991	E-Acc 1: 0.818	E-Acc 2: 0.837	PropNoEdge: 0.968
+Saving relation header
+Best validation edge accuracy: 0.9876
+Epoch 28 time: 979.434s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:40.978	loss_rel:0.636	loss_prop_reg:40.342
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:34.131	loss_rel:0.384	loss_prop_reg:33.747
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:39.870	loss_rel:0.479	loss_prop_reg:39.391
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:41.978	loss_rel:0.617	loss_prop_reg:41.361
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:38.844	loss_rel:0.424	loss_prop_reg:38.420
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:31.106	loss_rel:0.357	loss_prop_reg:30.750
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:35.360	loss_rel:0.271	loss_prop_reg:35.089
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:31.613	loss_rel:0.312	loss_prop_reg:31.301
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:38.009	loss_rel:0.520	loss_prop_reg:37.489
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:28.727	loss_rel:0.316	loss_prop_reg:28.411
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:34.681	loss_rel:0.295	loss_prop_reg:34.386
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:33.891	loss_rel:0.378	loss_prop_reg:33.513
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:41.739	loss_rel:0.349	loss_prop_reg:41.390
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:32.292	loss_rel:0.400	loss_prop_reg:31.892
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:41.716	loss_rel:0.686	loss_prop_reg:41.030
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:30.829	loss_rel:0.354	loss_prop_reg:30.475
+Plotted gradient flow
+Validation data:  0.00% total_loss:32.901	loss_rel:0.314	loss_prop_reg:32.587
+Validation data:  25.64% total_loss:29.390	loss_rel:0.233	loss_prop_reg:29.157
+Validation data:  51.28% total_loss:39.732	loss_rel:0.607	loss_prop_reg:39.125
+Validation data:  76.92% total_loss:46.866	loss_rel:0.829	loss_prop_reg:46.037
+Calculating validation metrics...
+Epoch 29 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 1.899	pADE: 0.813	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.982	E-Acc 0: 0.985	E-Acc 1: 0.864	E-Acc 2: 0.879	PropNoEdge: 0.961
+Saving relation header
+Best validation edge accuracy: 0.9876
+Epoch 29 time: 977.361s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:35.268	loss_rel:0.422	loss_prop_reg:34.846
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:34.343	loss_rel:0.280	loss_prop_reg:34.063
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:38.857	loss_rel:0.419	loss_prop_reg:38.438
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:33.770	loss_rel:0.369	loss_prop_reg:33.400
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:33.107	loss_rel:0.401	loss_prop_reg:32.706
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:35.830	loss_rel:0.573	loss_prop_reg:35.257
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:30.618	loss_rel:0.300	loss_prop_reg:30.318
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:33.711	loss_rel:0.579	loss_prop_reg:33.132
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:37.446	loss_rel:0.239	loss_prop_reg:37.207
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:31.922	loss_rel:0.575	loss_prop_reg:31.346
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:38.455	loss_rel:0.372	loss_prop_reg:38.083
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:39.789	loss_rel:0.433	loss_prop_reg:39.356
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:42.944	loss_rel:0.456	loss_prop_reg:42.488
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:46.352	loss_rel:0.406	loss_prop_reg:45.947
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:41.844	loss_rel:0.247	loss_prop_reg:41.597
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:44.613	loss_rel:0.858	loss_prop_reg:43.755
+Plotted gradient flow
+Validation data:  0.00% total_loss:33.080	loss_rel:0.349	loss_prop_reg:32.731
+Validation data:  25.64% total_loss:29.692	loss_rel:0.214	loss_prop_reg:29.478
+Validation data:  51.28% total_loss:40.279	loss_rel:0.480	loss_prop_reg:39.799
+Validation data:  76.92% total_loss:43.310	loss_rel:0.435	loss_prop_reg:42.876
+Calculating validation metrics...
+Epoch 30 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 1.921	pADE: 0.824	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.985	E-Acc 0: 0.989	E-Acc 1: 0.834	E-Acc 2: 0.858	PropNoEdge: 0.966
+Saving relation header
+Best validation edge accuracy: 0.9876
+Epoch 30 time: 978.028s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:37.045	loss_rel:0.842	loss_prop_reg:36.203
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:32.508	loss_rel:0.279	loss_prop_reg:32.230
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:32.610	loss_rel:0.353	loss_prop_reg:32.256
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:43.991	loss_rel:0.349	loss_prop_reg:43.642
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:34.681	loss_rel:0.393	loss_prop_reg:34.289
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:38.737	loss_rel:0.526	loss_prop_reg:38.211
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:33.561	loss_rel:0.332	loss_prop_reg:33.229
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:32.145	loss_rel:0.349	loss_prop_reg:31.796
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:38.553	loss_rel:0.369	loss_prop_reg:38.185
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:33.885	loss_rel:0.625	loss_prop_reg:33.260
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:36.809	loss_rel:0.348	loss_prop_reg:36.461
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:42.217	loss_rel:0.361	loss_prop_reg:41.856
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:39.053	loss_rel:0.791	loss_prop_reg:38.263
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:34.129	loss_rel:0.365	loss_prop_reg:33.764
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:34.854	loss_rel:0.350	loss_prop_reg:34.504
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:40.850	loss_rel:0.202	loss_prop_reg:40.648
+Plotted gradient flow
+Validation data:  0.00% total_loss:33.217	loss_rel:0.246	loss_prop_reg:32.972
+Validation data:  25.64% total_loss:30.742	loss_rel:0.166	loss_prop_reg:30.576
+Validation data:  51.28% total_loss:37.976	loss_rel:0.524	loss_prop_reg:37.452
+Validation data:  76.92% total_loss:46.496	loss_rel:0.407	loss_prop_reg:46.089
+Calculating validation metrics...
+Epoch 31 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 1.898	pADE: 0.821	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.985	E-Acc 0: 0.989	E-Acc 1: 0.845	E-Acc 2: 0.856	PropNoEdge: 0.965
+Saving relation header
+Best validation edge accuracy: 0.9876
+Epoch 31 time: 986.055s
+Training data:  0.00% lr=1.000e-04 rel_coef=100.0 total_loss:38.811	loss_rel:0.286	loss_prop_reg:38.526
+Training data:  6.41% lr=1.000e-04 rel_coef=100.0 total_loss:26.872	loss_rel:0.240	loss_prop_reg:26.631
+Training data:  12.81% lr=1.000e-04 rel_coef=100.0 total_loss:37.192	loss_rel:0.283	loss_prop_reg:36.908
+Training data:  19.22% lr=1.000e-04 rel_coef=100.0 total_loss:23.931	loss_rel:0.235	loss_prop_reg:23.696
+Training data:  25.62% lr=1.000e-04 rel_coef=100.0 total_loss:24.162	loss_rel:0.324	loss_prop_reg:23.838
+Training data:  32.03% lr=1.000e-04 rel_coef=100.0 total_loss:35.259	loss_rel:0.243	loss_prop_reg:35.016
+Training data:  38.44% lr=1.000e-04 rel_coef=100.0 total_loss:25.329	loss_rel:0.471	loss_prop_reg:24.858
+Training data:  44.84% lr=1.000e-04 rel_coef=100.0 total_loss:33.627	loss_rel:0.263	loss_prop_reg:33.364
+Training data:  51.25% lr=1.000e-04 rel_coef=100.0 total_loss:36.677	loss_rel:0.367	loss_prop_reg:36.310
+Training data:  57.66% lr=1.000e-04 rel_coef=100.0 total_loss:29.870	loss_rel:0.261	loss_prop_reg:29.609
+Training data:  64.06% lr=1.000e-04 rel_coef=100.0 total_loss:50.927	loss_rel:0.477	loss_prop_reg:50.451
+Training data:  70.47% lr=1.000e-04 rel_coef=100.0 total_loss:41.261	loss_rel:0.344	loss_prop_reg:40.917
+Training data:  76.87% lr=1.000e-04 rel_coef=100.0 total_loss:29.270	loss_rel:0.581	loss_prop_reg:28.689
+Training data:  83.28% lr=1.000e-04 rel_coef=100.0 total_loss:32.285	loss_rel:0.186	loss_prop_reg:32.099
+Training data:  89.69% lr=1.000e-04 rel_coef=100.0 total_loss:34.399	loss_rel:0.526	loss_prop_reg:33.873
+Training data:  96.09% lr=1.000e-04 rel_coef=100.0 total_loss:37.045	loss_rel:0.453	loss_prop_reg:36.592
+Plotted gradient flow
+Validation data:  0.00% total_loss:28.572	loss_rel:0.223	loss_prop_reg:28.348
+Validation data:  25.64% total_loss:26.956	loss_rel:0.152	loss_prop_reg:26.803
+Validation data:  51.28% total_loss:33.697	loss_rel:0.643	loss_prop_reg:33.054
+Validation data:  76.92% total_loss:41.024	loss_rel:0.380	loss_prop_reg:40.644
+Calculating validation metrics...
+Epoch 32 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 1.793	pADE: 0.767	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.987	E-Acc 0: 0.991	E-Acc 1: 0.845	E-Acc 2: 0.842	PropNoEdge: 0.968
+Saving relation header
+Best validation edge accuracy: 0.9876
+Epoch 32 time: 977.737s
+Training data:  0.00% lr=1.000e-04 rel_coef=100.0 total_loss:25.473	loss_rel:0.480	loss_prop_reg:24.993
+Training data:  6.41% lr=1.000e-04 rel_coef=100.0 total_loss:24.430	loss_rel:0.194	loss_prop_reg:24.235
+Training data:  12.81% lr=1.000e-04 rel_coef=100.0 total_loss:26.794	loss_rel:0.229	loss_prop_reg:26.564
+Training data:  19.22% lr=1.000e-04 rel_coef=100.0 total_loss:29.239	loss_rel:0.389	loss_prop_reg:28.849
+Training data:  25.62% lr=1.000e-04 rel_coef=100.0 total_loss:36.190	loss_rel:0.394	loss_prop_reg:35.796
+Training data:  32.03% lr=1.000e-04 rel_coef=100.0 total_loss:31.184	loss_rel:0.404	loss_prop_reg:30.779
+Training data:  38.44% lr=1.000e-04 rel_coef=100.0 total_loss:29.676	loss_rel:0.220	loss_prop_reg:29.456
+Training data:  44.84% lr=1.000e-04 rel_coef=100.0 total_loss:30.568	loss_rel:0.521	loss_prop_reg:30.047
+Training data:  51.25% lr=1.000e-04 rel_coef=100.0 total_loss:29.804	loss_rel:0.280	loss_prop_reg:29.525
+Training data:  57.66% lr=1.000e-04 rel_coef=100.0 total_loss:46.159	loss_rel:0.380	loss_prop_reg:45.779
+Training data:  64.06% lr=1.000e-04 rel_coef=100.0 total_loss:33.507	loss_rel:0.313	loss_prop_reg:33.194
+Training data:  70.47% lr=1.000e-04 rel_coef=100.0 total_loss:26.961	loss_rel:0.501	loss_prop_reg:26.460
+Training data:  76.87% lr=1.000e-04 rel_coef=100.0 total_loss:37.324	loss_rel:0.571	loss_prop_reg:36.753
+Training data:  83.28% lr=1.000e-04 rel_coef=100.0 total_loss:33.894	loss_rel:0.404	loss_prop_reg:33.490
+Training data:  89.69% lr=1.000e-04 rel_coef=100.0 total_loss:23.554	loss_rel:0.359	loss_prop_reg:23.195
+Training data:  96.09% lr=1.000e-04 rel_coef=100.0 total_loss:30.842	loss_rel:0.302	loss_prop_reg:30.540
+Plotted gradient flow
+Validation data:  0.00% total_loss:28.203	loss_rel:0.239	loss_prop_reg:27.965
+Validation data:  25.64% total_loss:27.875	loss_rel:0.149	loss_prop_reg:27.726
+Validation data:  51.28% total_loss:32.767	loss_rel:0.542	loss_prop_reg:32.226
+Validation data:  76.92% total_loss:39.688	loss_rel:0.373	loss_prop_reg:39.316
+Calculating validation metrics...
+Epoch 33 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 1.789	pADE: 0.764	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.987	E-Acc 0: 0.991	E-Acc 1: 0.847	E-Acc 2: 0.849	PropNoEdge: 0.967
+Saving relation header
+Best validation edge accuracy: 0.9876
+Epoch 33 time: 982.504s
+Training data:  0.00% lr=1.000e-04 rel_coef=100.0 total_loss:30.646	loss_rel:0.573	loss_prop_reg:30.073
+Training data:  6.41% lr=1.000e-04 rel_coef=100.0 total_loss:29.837	loss_rel:0.308	loss_prop_reg:29.529
+Training data:  12.81% lr=1.000e-04 rel_coef=100.0 total_loss:29.615	loss_rel:0.179	loss_prop_reg:29.436
+Training data:  19.22% lr=1.000e-04 rel_coef=100.0 total_loss:32.468	loss_rel:0.678	loss_prop_reg:31.791
+Training data:  25.62% lr=1.000e-04 rel_coef=100.0 total_loss:28.783	loss_rel:0.305	loss_prop_reg:28.477
+Training data:  32.03% lr=1.000e-04 rel_coef=100.0 total_loss:30.978	loss_rel:0.368	loss_prop_reg:30.610
+Training data:  38.44% lr=1.000e-04 rel_coef=100.0 total_loss:30.141	loss_rel:0.284	loss_prop_reg:29.857
+Training data:  44.84% lr=1.000e-04 rel_coef=100.0 total_loss:32.338	loss_rel:0.263	loss_prop_reg:32.075
+Training data:  51.25% lr=1.000e-04 rel_coef=100.0 total_loss:27.588	loss_rel:0.118	loss_prop_reg:27.470
+Training data:  57.66% lr=1.000e-04 rel_coef=100.0 total_loss:37.700	loss_rel:0.585	loss_prop_reg:37.115
+Training data:  64.06% lr=1.000e-04 rel_coef=100.0 total_loss:34.305	loss_rel:0.724	loss_prop_reg:33.581
+Training data:  70.47% lr=1.000e-04 rel_coef=100.0 total_loss:28.078	loss_rel:0.304	loss_prop_reg:27.775
+Training data:  76.87% lr=1.000e-04 rel_coef=100.0 total_loss:24.252	loss_rel:0.210	loss_prop_reg:24.042
+Training data:  83.28% lr=1.000e-04 rel_coef=100.0 total_loss:29.302	loss_rel:0.276	loss_prop_reg:29.026
+Training data:  89.69% lr=1.000e-04 rel_coef=100.0 total_loss:37.240	loss_rel:0.290	loss_prop_reg:36.950
+Training data:  96.09% lr=1.000e-04 rel_coef=100.0 total_loss:33.309	loss_rel:0.379	loss_prop_reg:32.930
+Plotted gradient flow
+Validation data:  0.00% total_loss:27.562	loss_rel:0.207	loss_prop_reg:27.355
+Validation data:  25.64% total_loss:27.596	loss_rel:0.158	loss_prop_reg:27.438
+Validation data:  51.28% total_loss:33.286	loss_rel:0.622	loss_prop_reg:32.664
+Validation data:  76.92% total_loss:40.766	loss_rel:0.371	loss_prop_reg:40.395
+Calculating validation metrics...
+Epoch 34 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 1.777	pADE: 0.762	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.987	E-Acc 0: 0.990	E-Acc 1: 0.854	E-Acc 2: 0.846	PropNoEdge: 0.967
+Saving relation header
+Best validation edge accuracy: 0.9876
+Epoch 34 time: 970.664s
+Training data:  0.00% lr=1.000e-04 rel_coef=100.0 total_loss:28.294	loss_rel:0.294	loss_prop_reg:28.000
+Training data:  6.41% lr=1.000e-04 rel_coef=100.0 total_loss:42.016	loss_rel:0.341	loss_prop_reg:41.675
+Training data:  12.81% lr=1.000e-04 rel_coef=100.0 total_loss:26.983	loss_rel:0.362	loss_prop_reg:26.621
+Training data:  19.22% lr=1.000e-04 rel_coef=100.0 total_loss:26.749	loss_rel:0.290	loss_prop_reg:26.459
+Training data:  25.62% lr=1.000e-04 rel_coef=100.0 total_loss:33.185	loss_rel:0.256	loss_prop_reg:32.929
+Training data:  32.03% lr=1.000e-04 rel_coef=100.0 total_loss:33.392	loss_rel:0.396	loss_prop_reg:32.996
+Training data:  38.44% lr=1.000e-04 rel_coef=100.0 total_loss:28.794	loss_rel:0.466	loss_prop_reg:28.328
+Training data:  44.84% lr=1.000e-04 rel_coef=100.0 total_loss:26.174	loss_rel:0.423	loss_prop_reg:25.751
+Training data:  51.25% lr=1.000e-04 rel_coef=100.0 total_loss:42.716	loss_rel:0.342	loss_prop_reg:42.374
+Training data:  57.66% lr=1.000e-04 rel_coef=100.0 total_loss:31.931	loss_rel:0.426	loss_prop_reg:31.505
+Training data:  64.06% lr=1.000e-04 rel_coef=100.0 total_loss:27.962	loss_rel:0.297	loss_prop_reg:27.665
+Training data:  70.47% lr=1.000e-04 rel_coef=100.0 total_loss:32.632	loss_rel:0.325	loss_prop_reg:32.307
+Training data:  76.87% lr=1.000e-04 rel_coef=100.0 total_loss:25.623	loss_rel:0.122	loss_prop_reg:25.501
+Training data:  83.28% lr=1.000e-04 rel_coef=100.0 total_loss:27.836	loss_rel:0.518	loss_prop_reg:27.318
+Training data:  89.69% lr=1.000e-04 rel_coef=100.0 total_loss:38.970	loss_rel:0.616	loss_prop_reg:38.355
+Training data:  96.09% lr=1.000e-04 rel_coef=100.0 total_loss:28.213	loss_rel:0.159	loss_prop_reg:28.054
+Plotted gradient flow
+Validation data:  0.00% total_loss:28.261	loss_rel:0.218	loss_prop_reg:28.043
+Validation data:  25.64% total_loss:27.472	loss_rel:0.152	loss_prop_reg:27.319
+Validation data:  51.28% total_loss:32.810	loss_rel:0.504	loss_prop_reg:32.306
+Validation data:  76.92% total_loss:40.262	loss_rel:0.371	loss_prop_reg:39.891
+Calculating validation metrics...
+Epoch 35 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 1.774	pADE: 0.758	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.987	E-Acc 0: 0.990	E-Acc 1: 0.843	E-Acc 2: 0.860	PropNoEdge: 0.967
+Saving relation header
+Best validation edge accuracy: 0.9876
+Epoch 35 time: 970.690s
+Training data:  0.00% lr=1.000e-05 rel_coef=100.0 total_loss:27.516	loss_rel:0.274	loss_prop_reg:27.242
+Training data:  6.41% lr=1.000e-05 rel_coef=100.0 total_loss:31.814	loss_rel:0.232	loss_prop_reg:31.581
+Training data:  12.81% lr=1.000e-05 rel_coef=100.0 total_loss:30.383	loss_rel:0.421	loss_prop_reg:29.963
+Training data:  19.22% lr=1.000e-05 rel_coef=100.0 total_loss:26.338	loss_rel:0.388	loss_prop_reg:25.951
+Training data:  25.62% lr=1.000e-05 rel_coef=100.0 total_loss:25.502	loss_rel:0.192	loss_prop_reg:25.310
+Training data:  32.03% lr=1.000e-05 rel_coef=100.0 total_loss:33.721	loss_rel:0.430	loss_prop_reg:33.292
+Training data:  38.44% lr=1.000e-05 rel_coef=100.0 total_loss:35.986	loss_rel:0.351	loss_prop_reg:35.635
+Training data:  44.84% lr=1.000e-05 rel_coef=100.0 total_loss:30.051	loss_rel:0.228	loss_prop_reg:29.823
+Training data:  51.25% lr=1.000e-05 rel_coef=100.0 total_loss:31.347	loss_rel:0.344	loss_prop_reg:31.002
+Training data:  57.66% lr=1.000e-05 rel_coef=100.0 total_loss:24.652	loss_rel:0.218	loss_prop_reg:24.435
+Training data:  64.06% lr=1.000e-05 rel_coef=100.0 total_loss:21.646	loss_rel:0.448	loss_prop_reg:21.198
+Training data:  70.47% lr=1.000e-05 rel_coef=100.0 total_loss:28.803	loss_rel:0.493	loss_prop_reg:28.311
+Training data:  76.87% lr=1.000e-05 rel_coef=100.0 total_loss:29.477	loss_rel:0.257	loss_prop_reg:29.220
+Training data:  83.28% lr=1.000e-05 rel_coef=100.0 total_loss:27.492	loss_rel:0.329	loss_prop_reg:27.163
+Training data:  89.69% lr=1.000e-05 rel_coef=100.0 total_loss:23.765	loss_rel:0.322	loss_prop_reg:23.443
+Training data:  96.09% lr=1.000e-05 rel_coef=100.0 total_loss:27.091	loss_rel:0.363	loss_prop_reg:26.728
+Plotted gradient flow
+Validation data:  0.00% total_loss:27.340	loss_rel:0.206	loss_prop_reg:27.134
+Validation data:  25.64% total_loss:27.219	loss_rel:0.154	loss_prop_reg:27.065
+Validation data:  51.28% total_loss:32.834	loss_rel:0.556	loss_prop_reg:32.278
+Validation data:  76.92% total_loss:40.463	loss_rel:0.365	loss_prop_reg:40.098
+Calculating validation metrics...
+Epoch 36 validation-set results:  FDE: 0.000	ADE: 0.000	pFDE: 1.768	pADE: 0.755	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000	E-Acc: 0.986	E-Acc 0: 0.990	E-Acc 1: 0.847	E-Acc 2: 0.859	PropNoEdge: 0.967
+Saving relation header
+Best validation edge accuracy: 0.9876
+Epoch 36 time: 989.418s
+Loaded preprocessed training data.
+Loaded preprocessed validation data.
+Loaded preprocessed training data.
+Loaded preprocessed validation data.
+Loaded preprocessed training data.
+Loaded preprocessed validation data.
+Loaded preprocessed training data.
+Loaded preprocessed validation data.
+Command line arguments:
+fjmp.py
+--mode
+train
+--dataset
+argoverse2
+--config_name
+fjmp_argoverse2
+--batch_size
+32
+--max_epochs
+36
+--num_proposals
+15
+--gpu_start
+1
+--proposal_header
+--two_stage_training
+--training_stage
+2
+--ig
+dense
+--n_mapnet_layers
+4
+--decoder
+dagnn
+--teacher_forcing
+Model: 2188528 parameters
+Training model...
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:1690.668	loss_reg:848.759	loss_prop_reg:841.910
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:1182.996	loss_reg:588.018	loss_prop_reg:594.978
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:376.465	loss_reg:190.409	loss_prop_reg:186.056
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:357.748	loss_reg:177.837	loss_prop_reg:179.910
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:265.157	loss_reg:137.837	loss_prop_reg:127.320
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:188.550	loss_reg:93.500	loss_prop_reg:95.050
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:142.988	loss_reg:73.095	loss_prop_reg:69.893
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:171.073	loss_reg:83.661	loss_prop_reg:87.411
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:145.986	loss_reg:74.162	loss_prop_reg:71.824
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:185.865	loss_reg:96.430	loss_prop_reg:89.435
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:154.917	loss_reg:80.065	loss_prop_reg:74.852
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:161.288	loss_reg:81.826	loss_prop_reg:79.462
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:170.849	loss_reg:87.508	loss_prop_reg:83.341
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:165.719	loss_reg:87.397	loss_prop_reg:78.322
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:160.782	loss_reg:82.233	loss_prop_reg:78.549
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:136.449	loss_reg:67.562	loss_prop_reg:68.887
+Plotted gradient flow
+Validation data:  0.00% total_loss:153.685	loss_reg:80.709	loss_prop_reg:72.977
+Validation data:  25.64% total_loss:102.573	loss_reg:51.506	loss_prop_reg:51.067
+Validation data:  51.28% total_loss:132.741	loss_reg:69.546	loss_prop_reg:63.194
+Validation data:  76.92% total_loss:162.996	loss_reg:84.949	loss_prop_reg:78.047
+Calculating validation metrics...
+Epoch 1 validation-set results:  FDE: 3.205	ADE: 1.391	pFDE: 2.961	pADE: 1.316	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 4.5957 Best ADE: 1.391 Best FDE: 3.205
+Epoch 1 time: 1369.753s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:158.925	loss_reg:80.423	loss_prop_reg:78.503
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:158.712	loss_reg:79.149	loss_prop_reg:79.562
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:155.217	loss_reg:79.662	loss_prop_reg:75.555
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:122.038	loss_reg:62.688	loss_prop_reg:59.350
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:126.118	loss_reg:67.967	loss_prop_reg:58.151
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:138.267	loss_reg:69.933	loss_prop_reg:68.334
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:147.360	loss_reg:77.368	loss_prop_reg:69.993
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:116.139	loss_reg:58.285	loss_prop_reg:57.853
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:129.113	loss_reg:67.844	loss_prop_reg:61.269
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:159.654	loss_reg:84.536	loss_prop_reg:75.118
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:118.354	loss_reg:60.106	loss_prop_reg:58.248
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:110.317	loss_reg:58.091	loss_prop_reg:52.226
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:149.443	loss_reg:79.594	loss_prop_reg:69.849
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:135.368	loss_reg:69.981	loss_prop_reg:65.386
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:105.755	loss_reg:55.397	loss_prop_reg:50.358
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:158.695	loss_reg:84.147	loss_prop_reg:74.548
+Plotted gradient flow
+Validation data:  0.00% total_loss:122.910	loss_reg:64.488	loss_prop_reg:58.422
+Validation data:  25.64% total_loss:98.104	loss_reg:51.859	loss_prop_reg:46.245
+Validation data:  51.28% total_loss:120.546	loss_reg:59.766	loss_prop_reg:60.780
+Validation data:  76.92% total_loss:149.289	loss_reg:76.280	loss_prop_reg:73.009
+Calculating validation metrics...
+Epoch 2 validation-set results:  FDE: 3.010	ADE: 1.288	pFDE: 2.739	pADE: 1.213	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 4.2984 Best ADE: 1.288 Best FDE: 3.010
+Epoch 2 time: 1376.451s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:112.973	loss_reg:58.542	loss_prop_reg:54.431
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:93.142	loss_reg:49.479	loss_prop_reg:43.663
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:108.228	loss_reg:57.573	loss_prop_reg:50.655
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:125.365	loss_reg:63.541	loss_prop_reg:61.824
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:121.620	loss_reg:67.499	loss_prop_reg:54.121
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:120.799	loss_reg:63.347	loss_prop_reg:57.452
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:130.947	loss_reg:67.481	loss_prop_reg:63.466
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:126.278	loss_reg:66.307	loss_prop_reg:59.970
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:140.856	loss_reg:73.745	loss_prop_reg:67.111
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:121.931	loss_reg:63.899	loss_prop_reg:58.032
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:113.701	loss_reg:58.606	loss_prop_reg:55.095
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:108.918	loss_reg:59.814	loss_prop_reg:49.104
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:122.501	loss_reg:66.173	loss_prop_reg:56.328
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:111.397	loss_reg:57.272	loss_prop_reg:54.124
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:128.240	loss_reg:65.123	loss_prop_reg:63.117
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:100.908	loss_reg:54.687	loss_prop_reg:46.220
+Plotted gradient flow
+Validation data:  0.00% total_loss:123.150	loss_reg:67.141	loss_prop_reg:56.009
+Validation data:  25.64% total_loss:89.062	loss_reg:46.025	loss_prop_reg:43.036
+Validation data:  51.28% total_loss:110.767	loss_reg:57.507	loss_prop_reg:53.260
+Validation data:  76.92% total_loss:134.872	loss_reg:69.090	loss_prop_reg:65.782
+Calculating validation metrics...
+Epoch 3 validation-set results:  FDE: 2.761	ADE: 1.206	pFDE: 2.515	pADE: 1.087	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 3.9670 Best ADE: 1.206 Best FDE: 2.761
+Epoch 3 time: 1372.605s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:123.598	loss_reg:66.365	loss_prop_reg:57.233
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:99.692	loss_reg:52.347	loss_prop_reg:47.345
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:104.711	loss_reg:52.555	loss_prop_reg:52.155
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:93.394	loss_reg:48.797	loss_prop_reg:44.597
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:108.873	loss_reg:56.720	loss_prop_reg:52.153
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:128.298	loss_reg:67.445	loss_prop_reg:60.853
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:126.150	loss_reg:64.085	loss_prop_reg:62.065
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:117.565	loss_reg:60.987	loss_prop_reg:56.579
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:102.939	loss_reg:53.031	loss_prop_reg:49.908
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:116.060	loss_reg:63.049	loss_prop_reg:53.010
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:99.184	loss_reg:53.160	loss_prop_reg:46.025
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:111.898	loss_reg:57.430	loss_prop_reg:54.469
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:91.330	loss_reg:46.805	loss_prop_reg:44.525
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:121.096	loss_reg:63.204	loss_prop_reg:57.892
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:102.171	loss_reg:55.793	loss_prop_reg:46.378
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:108.119	loss_reg:53.618	loss_prop_reg:54.501
+Plotted gradient flow
+Validation data:  0.00% total_loss:106.724	loss_reg:57.665	loss_prop_reg:49.060
+Validation data:  25.64% total_loss:91.319	loss_reg:47.545	loss_prop_reg:43.773
+Validation data:  51.28% total_loss:110.286	loss_reg:58.502	loss_prop_reg:51.784
+Validation data:  76.92% total_loss:126.988	loss_reg:64.891	loss_prop_reg:62.097
+Calculating validation metrics...
+Epoch 4 validation-set results:  FDE: 2.703	ADE: 1.180	pFDE: 2.463	pADE: 1.085	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 3.8825 Best ADE: 1.180 Best FDE: 2.703
+Epoch 4 time: 1380.560s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:112.061	loss_reg:58.602	loss_prop_reg:53.459
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:94.809	loss_reg:50.962	loss_prop_reg:43.847
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:81.081	loss_reg:43.118	loss_prop_reg:37.963
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:103.755	loss_reg:52.674	loss_prop_reg:51.081
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:116.036	loss_reg:64.892	loss_prop_reg:51.144
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:103.709	loss_reg:54.732	loss_prop_reg:48.978
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:115.317	loss_reg:59.369	loss_prop_reg:55.948
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:63.790	loss_reg:33.358	loss_prop_reg:30.432
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:118.211	loss_reg:61.696	loss_prop_reg:56.514
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:92.093	loss_reg:49.330	loss_prop_reg:42.762
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:113.302	loss_reg:58.818	loss_prop_reg:54.485
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:92.251	loss_reg:47.788	loss_prop_reg:44.463
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:86.594	loss_reg:46.251	loss_prop_reg:40.342
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:95.515	loss_reg:48.298	loss_prop_reg:47.217
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:94.072	loss_reg:49.516	loss_prop_reg:44.556
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:127.726	loss_reg:67.280	loss_prop_reg:60.446
+Plotted gradient flow
+Validation data:  0.00% total_loss:94.624	loss_reg:49.818	loss_prop_reg:44.806
+Validation data:  25.64% total_loss:80.446	loss_reg:40.687	loss_prop_reg:39.759
+Validation data:  51.28% total_loss:106.446	loss_reg:54.894	loss_prop_reg:51.552
+Validation data:  76.92% total_loss:122.712	loss_reg:62.216	loss_prop_reg:60.497
+Calculating validation metrics...
+Epoch 5 validation-set results:  FDE: 2.522	ADE: 1.067	pFDE: 2.302	pADE: 0.983	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 3.5897 Best ADE: 1.067 Best FDE: 2.522
+Epoch 5 time: 1383.433s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:142.410	loss_reg:75.775	loss_prop_reg:66.635
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:101.156	loss_reg:54.698	loss_prop_reg:46.457
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:59.666	loss_reg:32.317	loss_prop_reg:27.349
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:127.434	loss_reg:68.007	loss_prop_reg:59.427
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:93.088	loss_reg:53.330	loss_prop_reg:39.758
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:131.917	loss_reg:68.789	loss_prop_reg:63.127
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:110.387	loss_reg:56.886	loss_prop_reg:53.500
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:98.833	loss_reg:49.340	loss_prop_reg:49.493
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:122.568	loss_reg:64.896	loss_prop_reg:57.672
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:137.025	loss_reg:70.079	loss_prop_reg:66.946
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:122.256	loss_reg:61.860	loss_prop_reg:60.396
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:110.970	loss_reg:56.055	loss_prop_reg:54.916
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:124.713	loss_reg:62.729	loss_prop_reg:61.984
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:111.819	loss_reg:59.404	loss_prop_reg:52.415
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:122.010	loss_reg:65.943	loss_prop_reg:56.067
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:76.694	loss_reg:39.815	loss_prop_reg:36.880
+Plotted gradient flow
+Validation data:  0.00% total_loss:96.542	loss_reg:52.139	loss_prop_reg:44.403
+Validation data:  25.64% total_loss:80.774	loss_reg:44.907	loss_prop_reg:35.867
+Validation data:  51.28% total_loss:102.827	loss_reg:53.163	loss_prop_reg:49.664
+Validation data:  76.92% total_loss:110.185	loss_reg:57.217	loss_prop_reg:52.968
+Calculating validation metrics...
+Epoch 6 validation-set results:  FDE: 2.458	ADE: 1.024	pFDE: 2.204	pADE: 0.942	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 3.4816 Best ADE: 1.024 Best FDE: 2.458
+Epoch 6 time: 1392.267s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:80.729	loss_reg:43.917	loss_prop_reg:36.811
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:85.825	loss_reg:45.744	loss_prop_reg:40.081
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:87.659	loss_reg:45.189	loss_prop_reg:42.470
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:135.268	loss_reg:70.086	loss_prop_reg:65.181
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:86.638	loss_reg:45.082	loss_prop_reg:41.556
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:93.157	loss_reg:45.714	loss_prop_reg:47.443
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:103.350	loss_reg:53.369	loss_prop_reg:49.982
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:111.165	loss_reg:59.272	loss_prop_reg:51.893
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:72.778	loss_reg:38.112	loss_prop_reg:34.666
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:106.905	loss_reg:54.683	loss_prop_reg:52.222
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:94.292	loss_reg:50.582	loss_prop_reg:43.710
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:106.996	loss_reg:56.556	loss_prop_reg:50.440
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:90.719	loss_reg:45.839	loss_prop_reg:44.880
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:88.296	loss_reg:47.363	loss_prop_reg:40.933
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:104.798	loss_reg:57.237	loss_prop_reg:47.561
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:75.941	loss_reg:43.024	loss_prop_reg:32.917
+Plotted gradient flow
+Validation data:  0.00% total_loss:82.289	loss_reg:45.181	loss_prop_reg:37.109
+Validation data:  25.64% total_loss:75.713	loss_reg:38.893	loss_prop_reg:36.820
+Validation data:  51.28% total_loss:95.123	loss_reg:50.507	loss_prop_reg:44.616
+Validation data:  76.92% total_loss:112.500	loss_reg:58.558	loss_prop_reg:53.942
+Calculating validation metrics...
+Epoch 7 validation-set results:  FDE: 2.442	ADE: 1.030	pFDE: 2.263	pADE: 0.985	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 3.4716 Best ADE: 1.030 Best FDE: 2.442
+Epoch 7 time: 1384.510s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:111.751	loss_reg:56.077	loss_prop_reg:55.674
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:89.175	loss_reg:47.449	loss_prop_reg:41.726
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:109.511	loss_reg:57.138	loss_prop_reg:52.373
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:104.135	loss_reg:55.602	loss_prop_reg:48.533
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:92.703	loss_reg:48.822	loss_prop_reg:43.881
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:102.772	loss_reg:51.597	loss_prop_reg:51.176
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:95.213	loss_reg:49.394	loss_prop_reg:45.819
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:94.353	loss_reg:48.755	loss_prop_reg:45.597
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:94.710	loss_reg:51.247	loss_prop_reg:43.463
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:82.906	loss_reg:44.236	loss_prop_reg:38.670
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:84.290	loss_reg:44.819	loss_prop_reg:39.471
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:125.731	loss_reg:64.853	loss_prop_reg:60.878
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:114.942	loss_reg:61.135	loss_prop_reg:53.807
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:95.297	loss_reg:50.376	loss_prop_reg:44.921
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:85.501	loss_reg:45.976	loss_prop_reg:39.524
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:93.558	loss_reg:48.393	loss_prop_reg:45.164
+Plotted gradient flow
+Validation data:  0.00% total_loss:85.181	loss_reg:46.868	loss_prop_reg:38.312
+Validation data:  25.64% total_loss:68.814	loss_reg:35.802	loss_prop_reg:33.012
+Validation data:  51.28% total_loss:91.539	loss_reg:47.156	loss_prop_reg:44.384
+Validation data:  76.92% total_loss:107.699	loss_reg:55.286	loss_prop_reg:52.412
+Calculating validation metrics...
+Epoch 8 validation-set results:  FDE: 2.407	ADE: 1.022	pFDE: 2.171	pADE: 0.942	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 3.4289 Best ADE: 1.022 Best FDE: 2.407
+Epoch 8 time: 1385.599s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:82.885	loss_reg:43.801	loss_prop_reg:39.084
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:91.666	loss_reg:47.816	loss_prop_reg:43.849
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:116.125	loss_reg:62.553	loss_prop_reg:53.572
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:91.919	loss_reg:49.947	loss_prop_reg:41.972
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:86.064	loss_reg:45.306	loss_prop_reg:40.758
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:88.499	loss_reg:47.620	loss_prop_reg:40.879
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:114.413	loss_reg:61.921	loss_prop_reg:52.492
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:96.277	loss_reg:48.181	loss_prop_reg:48.096
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:92.775	loss_reg:48.656	loss_prop_reg:44.119
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:82.514	loss_reg:45.142	loss_prop_reg:37.372
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:90.492	loss_reg:48.301	loss_prop_reg:42.190
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:86.930	loss_reg:45.730	loss_prop_reg:41.201
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:103.461	loss_reg:55.925	loss_prop_reg:47.536
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:105.475	loss_reg:58.555	loss_prop_reg:46.920
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:108.134	loss_reg:56.677	loss_prop_reg:51.457
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:113.363	loss_reg:60.802	loss_prop_reg:52.561
+Plotted gradient flow
+Validation data:  0.00% total_loss:70.699	loss_reg:40.327	loss_prop_reg:30.372
+Validation data:  25.64% total_loss:72.058	loss_reg:38.816	loss_prop_reg:33.242
+Validation data:  51.28% total_loss:91.926	loss_reg:48.837	loss_prop_reg:43.088
+Validation data:  76.92% total_loss:101.127	loss_reg:51.934	loss_prop_reg:49.193
+Calculating validation metrics...
+Epoch 9 validation-set results:  FDE: 2.324	ADE: 0.967	pFDE: 2.080	pADE: 0.885	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 3.2904 Best ADE: 0.967 Best FDE: 2.324
+Epoch 9 time: 1386.027s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:73.648	loss_reg:39.255	loss_prop_reg:34.393
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:102.266	loss_reg:55.501	loss_prop_reg:46.765
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:72.413	loss_reg:38.931	loss_prop_reg:33.482
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:121.473	loss_reg:64.979	loss_prop_reg:56.494
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:85.553	loss_reg:43.597	loss_prop_reg:41.956
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:84.381	loss_reg:41.946	loss_prop_reg:42.435
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:109.395	loss_reg:59.043	loss_prop_reg:50.352
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:77.886	loss_reg:41.380	loss_prop_reg:36.505
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:94.846	loss_reg:49.360	loss_prop_reg:45.486
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:67.423	loss_reg:33.848	loss_prop_reg:33.575
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:82.342	loss_reg:45.428	loss_prop_reg:36.914
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:95.731	loss_reg:50.362	loss_prop_reg:45.370
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:69.479	loss_reg:35.810	loss_prop_reg:33.669
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:94.099	loss_reg:52.360	loss_prop_reg:41.740
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:82.728	loss_reg:43.775	loss_prop_reg:38.953
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:71.342	loss_reg:39.243	loss_prop_reg:32.100
+Plotted gradient flow
+Validation data:  0.00% total_loss:78.939	loss_reg:43.455	loss_prop_reg:35.484
+Validation data:  25.64% total_loss:69.434	loss_reg:36.192	loss_prop_reg:33.242
+Validation data:  51.28% total_loss:89.660	loss_reg:48.191	loss_prop_reg:41.470
+Validation data:  76.92% total_loss:106.974	loss_reg:56.776	loss_prop_reg:50.197
+Calculating validation metrics...
+Epoch 10 validation-set results:  FDE: 2.332	ADE: 0.985	pFDE: 2.097	pADE: 0.902	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Best loss: 3.2904 Best ADE: 0.967 Best FDE: 2.324
+Epoch 10 time: 1384.149s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:95.444	loss_reg:46.716	loss_prop_reg:48.728
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:84.983	loss_reg:46.033	loss_prop_reg:38.950
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:98.328	loss_reg:53.128	loss_prop_reg:45.200
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:116.337	loss_reg:61.156	loss_prop_reg:55.181
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:94.730	loss_reg:54.388	loss_prop_reg:40.343
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:71.374	loss_reg:37.369	loss_prop_reg:34.005
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:107.655	loss_reg:55.540	loss_prop_reg:52.114
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:82.492	loss_reg:44.274	loss_prop_reg:38.218
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:90.300	loss_reg:49.419	loss_prop_reg:40.881
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:99.664	loss_reg:54.775	loss_prop_reg:44.889
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:79.045	loss_reg:42.010	loss_prop_reg:37.035
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:90.587	loss_reg:49.292	loss_prop_reg:41.295
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:74.668	loss_reg:38.892	loss_prop_reg:35.775
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:95.330	loss_reg:50.769	loss_prop_reg:44.560
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:99.825	loss_reg:53.936	loss_prop_reg:45.889
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:89.765	loss_reg:48.404	loss_prop_reg:41.361
+Plotted gradient flow
+Validation data:  0.00% total_loss:83.532	loss_reg:47.680	loss_prop_reg:35.852
+Validation data:  25.64% total_loss:71.494	loss_reg:38.322	loss_prop_reg:33.173
+Validation data:  51.28% total_loss:91.824	loss_reg:50.130	loss_prop_reg:41.694
+Validation data:  76.92% total_loss:104.518	loss_reg:54.503	loss_prop_reg:50.014
+Calculating validation metrics...
+Epoch 11 validation-set results:  FDE: 2.319	ADE: 0.980	pFDE: 2.100	pADE: 0.895	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Best loss: 3.2904 Best ADE: 0.967 Best FDE: 2.324
+Epoch 11 time: 1386.633s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:89.071	loss_reg:47.079	loss_prop_reg:41.991
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:92.246	loss_reg:48.632	loss_prop_reg:43.614
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:90.023	loss_reg:46.084	loss_prop_reg:43.939
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:94.303	loss_reg:49.140	loss_prop_reg:45.163
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:88.364	loss_reg:45.934	loss_prop_reg:42.430
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:86.587	loss_reg:46.349	loss_prop_reg:40.237
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:109.614	loss_reg:56.279	loss_prop_reg:53.335
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:75.175	loss_reg:38.962	loss_prop_reg:36.214
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:76.970	loss_reg:40.494	loss_prop_reg:36.476
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:104.715	loss_reg:53.925	loss_prop_reg:50.791
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:86.319	loss_reg:45.356	loss_prop_reg:40.964
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:77.737	loss_reg:39.069	loss_prop_reg:38.669
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:70.120	loss_reg:37.603	loss_prop_reg:32.517
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:84.492	loss_reg:43.646	loss_prop_reg:40.846
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:79.356	loss_reg:42.275	loss_prop_reg:37.081
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:65.016	loss_reg:34.467	loss_prop_reg:30.550
+Plotted gradient flow
+Validation data:  0.00% total_loss:76.478	loss_reg:41.744	loss_prop_reg:34.733
+Validation data:  25.64% total_loss:64.413	loss_reg:34.971	loss_prop_reg:29.442
+Validation data:  51.28% total_loss:92.205	loss_reg:50.033	loss_prop_reg:42.172
+Validation data:  76.92% total_loss:103.409	loss_reg:54.214	loss_prop_reg:49.195
+Calculating validation metrics...
+Epoch 12 validation-set results:  FDE: 2.241	ADE: 0.937	pFDE: 2.035	pADE: 0.871	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 3.1785 Best ADE: 0.937 Best FDE: 2.241
+Epoch 12 time: 1386.177s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:104.286	loss_reg:54.957	loss_prop_reg:49.329
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:67.563	loss_reg:36.034	loss_prop_reg:31.529
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:94.055	loss_reg:50.339	loss_prop_reg:43.716
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:89.352	loss_reg:48.705	loss_prop_reg:40.647
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:87.940	loss_reg:44.472	loss_prop_reg:43.468
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:57.050	loss_reg:29.997	loss_prop_reg:27.053
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:88.746	loss_reg:45.410	loss_prop_reg:43.337
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:85.939	loss_reg:44.559	loss_prop_reg:41.380
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:89.993	loss_reg:47.252	loss_prop_reg:42.741
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:86.411	loss_reg:46.354	loss_prop_reg:40.057
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:70.119	loss_reg:38.457	loss_prop_reg:31.662
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:76.743	loss_reg:42.368	loss_prop_reg:34.375
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:70.734	loss_reg:37.483	loss_prop_reg:33.251
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:71.719	loss_reg:37.876	loss_prop_reg:33.843
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:81.948	loss_reg:41.897	loss_prop_reg:40.052
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:90.207	loss_reg:44.933	loss_prop_reg:45.274
+Plotted gradient flow
+Validation data:  0.00% total_loss:76.964	loss_reg:42.275	loss_prop_reg:34.689
+Validation data:  25.64% total_loss:64.896	loss_reg:33.393	loss_prop_reg:31.503
+Validation data:  51.28% total_loss:90.388	loss_reg:49.405	loss_prop_reg:40.983
+Validation data:  76.92% total_loss:99.266	loss_reg:52.447	loss_prop_reg:46.819
+Calculating validation metrics...
+Epoch 13 validation-set results:  FDE: 2.259	ADE: 0.945	pFDE: 2.028	pADE: 0.865	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Best loss: 3.1785 Best ADE: 0.937 Best FDE: 2.241
+Epoch 13 time: 1387.342s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:89.120	loss_reg:49.520	loss_prop_reg:39.599
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:67.395	loss_reg:34.529	loss_prop_reg:32.866
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:86.036	loss_reg:45.274	loss_prop_reg:40.762
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:65.646	loss_reg:34.781	loss_prop_reg:30.866
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:93.221	loss_reg:48.215	loss_prop_reg:45.006
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:100.018	loss_reg:53.959	loss_prop_reg:46.060
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:70.198	loss_reg:38.436	loss_prop_reg:31.762
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:79.495	loss_reg:40.220	loss_prop_reg:39.275
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:66.817	loss_reg:35.248	loss_prop_reg:31.569
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:92.741	loss_reg:49.096	loss_prop_reg:43.645
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:88.126	loss_reg:46.559	loss_prop_reg:41.567
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:83.679	loss_reg:45.032	loss_prop_reg:38.648
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:81.786	loss_reg:43.885	loss_prop_reg:37.901
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:89.009	loss_reg:46.192	loss_prop_reg:42.818
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:73.966	loss_reg:40.837	loss_prop_reg:33.129
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:79.295	loss_reg:42.527	loss_prop_reg:36.768
+Plotted gradient flow
+Validation data:  0.00% total_loss:74.079	loss_reg:41.463	loss_prop_reg:32.616
+Validation data:  25.64% total_loss:66.118	loss_reg:35.958	loss_prop_reg:30.159
+Validation data:  51.28% total_loss:95.498	loss_reg:50.681	loss_prop_reg:44.817
+Validation data:  76.92% total_loss:106.812	loss_reg:55.904	loss_prop_reg:50.908
+Calculating validation metrics...
+Epoch 14 validation-set results:  FDE: 2.254	ADE: 0.951	pFDE: 2.017	pADE: 0.870	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Best loss: 3.1785 Best ADE: 0.937 Best FDE: 2.241
+Epoch 14 time: 1392.631s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:93.303	loss_reg:47.492	loss_prop_reg:45.811
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:75.916	loss_reg:39.303	loss_prop_reg:36.613
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:77.312	loss_reg:41.269	loss_prop_reg:36.043
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:84.001	loss_reg:45.222	loss_prop_reg:38.779
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:74.468	loss_reg:40.909	loss_prop_reg:33.560
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:82.568	loss_reg:45.201	loss_prop_reg:37.367
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:118.770	loss_reg:63.061	loss_prop_reg:55.709
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:74.475	loss_reg:39.276	loss_prop_reg:35.199
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:86.197	loss_reg:45.798	loss_prop_reg:40.399
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:74.695	loss_reg:40.424	loss_prop_reg:34.270
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:72.006	loss_reg:38.074	loss_prop_reg:33.932
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:88.205	loss_reg:46.855	loss_prop_reg:41.350
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:98.971	loss_reg:52.967	loss_prop_reg:46.004
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:73.885	loss_reg:38.345	loss_prop_reg:35.540
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:98.097	loss_reg:50.576	loss_prop_reg:47.521
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:102.190	loss_reg:52.172	loss_prop_reg:50.018
+Plotted gradient flow
+Validation data:  0.00% total_loss:72.491	loss_reg:38.962	loss_prop_reg:33.529
+Validation data:  25.64% total_loss:67.128	loss_reg:33.884	loss_prop_reg:33.244
+Validation data:  51.28% total_loss:87.232	loss_reg:47.038	loss_prop_reg:40.194
+Validation data:  76.92% total_loss:99.124	loss_reg:51.294	loss_prop_reg:47.830
+Calculating validation metrics...
+Epoch 15 validation-set results:  FDE: 2.192	ADE: 0.907	pFDE: 1.959	pADE: 0.833	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 3.0991 Best ADE: 0.907 Best FDE: 2.192
+Epoch 15 time: 1391.915s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:65.654	loss_reg:32.790	loss_prop_reg:32.864
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:87.666	loss_reg:49.677	loss_prop_reg:37.989
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:75.961	loss_reg:39.657	loss_prop_reg:36.305
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:88.000	loss_reg:46.821	loss_prop_reg:41.179
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:73.677	loss_reg:39.090	loss_prop_reg:34.587
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:68.356	loss_reg:37.816	loss_prop_reg:30.540
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:76.364	loss_reg:39.326	loss_prop_reg:37.037
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:69.135	loss_reg:36.199	loss_prop_reg:32.936
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:78.470	loss_reg:43.179	loss_prop_reg:35.291
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:80.119	loss_reg:44.092	loss_prop_reg:36.027
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:78.210	loss_reg:41.490	loss_prop_reg:36.720
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:92.993	loss_reg:50.157	loss_prop_reg:42.835
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:100.495	loss_reg:51.290	loss_prop_reg:49.205
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:79.193	loss_reg:41.197	loss_prop_reg:37.997
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:98.991	loss_reg:51.135	loss_prop_reg:47.856
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:92.323	loss_reg:47.346	loss_prop_reg:44.977
+Plotted gradient flow
+Validation data:  0.00% total_loss:79.727	loss_reg:42.135	loss_prop_reg:37.593
+Validation data:  25.64% total_loss:64.609	loss_reg:34.457	loss_prop_reg:30.152
+Validation data:  51.28% total_loss:89.596	loss_reg:47.561	loss_prop_reg:42.034
+Validation data:  76.92% total_loss:95.311	loss_reg:50.679	loss_prop_reg:44.632
+Calculating validation metrics...
+Epoch 16 validation-set results:  FDE: 2.207	ADE: 0.922	pFDE: 1.957	pADE: 0.839	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Best loss: 3.0991 Best ADE: 0.907 Best FDE: 2.192
+Epoch 16 time: 1391.085s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:85.684	loss_reg:45.746	loss_prop_reg:39.938
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:54.602	loss_reg:27.067	loss_prop_reg:27.536
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:74.639	loss_reg:39.651	loss_prop_reg:34.988
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:76.489	loss_reg:40.413	loss_prop_reg:36.076
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:79.461	loss_reg:43.186	loss_prop_reg:36.276
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:84.593	loss_reg:42.963	loss_prop_reg:41.630
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:85.196	loss_reg:44.787	loss_prop_reg:40.408
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:73.858	loss_reg:37.393	loss_prop_reg:36.466
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:86.904	loss_reg:45.171	loss_prop_reg:41.732
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:76.056	loss_reg:38.619	loss_prop_reg:37.437
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:76.013	loss_reg:39.417	loss_prop_reg:36.596
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:96.172	loss_reg:49.563	loss_prop_reg:46.609
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:95.325	loss_reg:50.849	loss_prop_reg:44.476
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:63.419	loss_reg:34.182	loss_prop_reg:29.236
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:65.892	loss_reg:33.482	loss_prop_reg:32.410
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:78.103	loss_reg:41.856	loss_prop_reg:36.246
+Plotted gradient flow
+Validation data:  0.00% total_loss:65.690	loss_reg:35.175	loss_prop_reg:30.515
+Validation data:  25.64% total_loss:71.550	loss_reg:38.044	loss_prop_reg:33.507
+Validation data:  51.28% total_loss:90.476	loss_reg:47.506	loss_prop_reg:42.971
+Validation data:  76.92% total_loss:105.536	loss_reg:55.860	loss_prop_reg:49.676
+Calculating validation metrics...
+Epoch 17 validation-set results:  FDE: 2.218	ADE: 0.933	pFDE: 1.987	pADE: 0.868	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Best loss: 3.0991 Best ADE: 0.907 Best FDE: 2.192
+Epoch 17 time: 1383.297s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:81.340	loss_reg:44.727	loss_prop_reg:36.612
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:62.212	loss_reg:32.660	loss_prop_reg:29.553
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:66.883	loss_reg:36.529	loss_prop_reg:30.354
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:60.129	loss_reg:32.102	loss_prop_reg:28.027
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:74.653	loss_reg:40.873	loss_prop_reg:33.780
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:94.216	loss_reg:49.140	loss_prop_reg:45.076
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:61.075	loss_reg:31.591	loss_prop_reg:29.483
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:75.432	loss_reg:41.393	loss_prop_reg:34.039
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:59.828	loss_reg:31.084	loss_prop_reg:28.744
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:67.185	loss_reg:35.091	loss_prop_reg:32.094
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:90.084	loss_reg:48.161	loss_prop_reg:41.923
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:78.460	loss_reg:40.470	loss_prop_reg:37.990
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:96.442	loss_reg:49.273	loss_prop_reg:47.169
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:84.945	loss_reg:46.576	loss_prop_reg:38.369
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:67.667	loss_reg:35.766	loss_prop_reg:31.902
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:77.879	loss_reg:42.038	loss_prop_reg:35.841
+Plotted gradient flow
+Validation data:  0.00% total_loss:74.433	loss_reg:38.235	loss_prop_reg:36.198
+Validation data:  25.64% total_loss:65.920	loss_reg:34.789	loss_prop_reg:31.131
+Validation data:  51.28% total_loss:84.447	loss_reg:44.850	loss_prop_reg:39.596
+Validation data:  76.92% total_loss:98.840	loss_reg:52.758	loss_prop_reg:46.082
+Calculating validation metrics...
+Epoch 18 validation-set results:  FDE: 2.160	ADE: 0.905	pFDE: 1.927	pADE: 0.835	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 3.0652 Best ADE: 0.905 Best FDE: 2.160
+Epoch 18 time: 1389.248s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:83.688	loss_reg:43.581	loss_prop_reg:40.107
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:82.543	loss_reg:43.980	loss_prop_reg:38.563
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:61.312	loss_reg:31.802	loss_prop_reg:29.510
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:95.956	loss_reg:52.816	loss_prop_reg:43.139
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:79.749	loss_reg:44.351	loss_prop_reg:35.398
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:56.459	loss_reg:29.239	loss_prop_reg:27.219
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:58.734	loss_reg:32.980	loss_prop_reg:25.753
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:92.177	loss_reg:49.574	loss_prop_reg:42.603
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:74.062	loss_reg:39.084	loss_prop_reg:34.979
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:88.339	loss_reg:47.810	loss_prop_reg:40.529
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:82.355	loss_reg:43.530	loss_prop_reg:38.825
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:73.342	loss_reg:39.634	loss_prop_reg:33.708
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:86.689	loss_reg:47.279	loss_prop_reg:39.410
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:80.715	loss_reg:41.837	loss_prop_reg:38.878
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:77.660	loss_reg:43.880	loss_prop_reg:33.779
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:93.458	loss_reg:46.707	loss_prop_reg:46.750
+Plotted gradient flow
+Validation data:  0.00% total_loss:69.691	loss_reg:36.641	loss_prop_reg:33.050
+Validation data:  25.64% total_loss:65.519	loss_reg:33.496	loss_prop_reg:32.022
+Validation data:  51.28% total_loss:85.848	loss_reg:44.732	loss_prop_reg:41.116
+Validation data:  76.92% total_loss:97.364	loss_reg:51.520	loss_prop_reg:45.844
+Calculating validation metrics...
+Epoch 19 validation-set results:  FDE: 2.162	ADE: 0.899	pFDE: 1.939	pADE: 0.830	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 3.0615 Best ADE: 0.899 Best FDE: 2.162
+Epoch 19 time: 1391.075s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:75.204	loss_reg:40.130	loss_prop_reg:35.074
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:81.466	loss_reg:41.852	loss_prop_reg:39.615
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:60.363	loss_reg:32.423	loss_prop_reg:27.939
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:104.043	loss_reg:54.567	loss_prop_reg:49.476
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:57.966	loss_reg:30.815	loss_prop_reg:27.151
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:71.347	loss_reg:36.324	loss_prop_reg:35.023
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:73.313	loss_reg:39.604	loss_prop_reg:33.709
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:96.914	loss_reg:52.667	loss_prop_reg:44.248
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:79.341	loss_reg:39.573	loss_prop_reg:39.769
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:65.234	loss_reg:35.320	loss_prop_reg:29.914
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:56.668	loss_reg:29.571	loss_prop_reg:27.097
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:81.298	loss_reg:45.257	loss_prop_reg:36.040
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:67.085	loss_reg:34.483	loss_prop_reg:32.602
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:95.257	loss_reg:47.706	loss_prop_reg:47.550
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:87.693	loss_reg:46.902	loss_prop_reg:40.791
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:66.875	loss_reg:34.411	loss_prop_reg:32.463
+Plotted gradient flow
+Validation data:  0.00% total_loss:71.299	loss_reg:37.384	loss_prop_reg:33.915
+Validation data:  25.64% total_loss:67.036	loss_reg:37.350	loss_prop_reg:29.686
+Validation data:  51.28% total_loss:92.009	loss_reg:48.474	loss_prop_reg:43.536
+Validation data:  76.92% total_loss:99.586	loss_reg:52.858	loss_prop_reg:46.729
+Calculating validation metrics...
+Epoch 20 validation-set results:  FDE: 2.133	ADE: 0.893	pFDE: 1.909	pADE: 0.831	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 3.0264 Best ADE: 0.893 Best FDE: 2.133
+Epoch 20 time: 1394.374s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:64.768	loss_reg:34.152	loss_prop_reg:30.616
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:75.204	loss_reg:38.230	loss_prop_reg:36.975
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:60.941	loss_reg:30.664	loss_prop_reg:30.277
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:93.236	loss_reg:48.730	loss_prop_reg:44.506
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:63.519	loss_reg:33.611	loss_prop_reg:29.907
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:60.187	loss_reg:32.676	loss_prop_reg:27.511
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:87.806	loss_reg:47.768	loss_prop_reg:40.038
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:80.191	loss_reg:43.828	loss_prop_reg:36.363
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:58.189	loss_reg:30.175	loss_prop_reg:28.014
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:80.108	loss_reg:42.324	loss_prop_reg:37.784
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:76.380	loss_reg:40.560	loss_prop_reg:35.820
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:95.942	loss_reg:51.452	loss_prop_reg:44.491
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:83.860	loss_reg:45.907	loss_prop_reg:37.953
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:96.040	loss_reg:51.332	loss_prop_reg:44.708
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:53.866	loss_reg:27.048	loss_prop_reg:26.818
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:84.595	loss_reg:45.199	loss_prop_reg:39.396
+Plotted gradient flow
+Validation data:  0.00% total_loss:68.373	loss_reg:36.564	loss_prop_reg:31.809
+Validation data:  25.64% total_loss:71.399	loss_reg:36.486	loss_prop_reg:34.914
+Validation data:  51.28% total_loss:82.196	loss_reg:42.674	loss_prop_reg:39.522
+Validation data:  76.92% total_loss:100.723	loss_reg:52.416	loss_prop_reg:48.307
+Calculating validation metrics...
+Epoch 21 validation-set results:  FDE: 2.124	ADE: 0.890	pFDE: 1.890	pADE: 0.815	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 3.0138 Best ADE: 0.890 Best FDE: 2.124
+Epoch 21 time: 1393.703s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:87.841	loss_reg:46.467	loss_prop_reg:41.374
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:87.717	loss_reg:46.371	loss_prop_reg:41.346
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:89.989	loss_reg:46.909	loss_prop_reg:43.081
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:60.788	loss_reg:31.684	loss_prop_reg:29.103
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:77.160	loss_reg:41.537	loss_prop_reg:35.622
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:90.336	loss_reg:48.587	loss_prop_reg:41.748
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:82.675	loss_reg:44.776	loss_prop_reg:37.900
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:57.646	loss_reg:32.565	loss_prop_reg:25.080
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:87.216	loss_reg:46.262	loss_prop_reg:40.953
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:90.484	loss_reg:47.785	loss_prop_reg:42.699
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:108.286	loss_reg:57.069	loss_prop_reg:51.217
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:44.514	loss_reg:26.642	loss_prop_reg:17.872
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:62.367	loss_reg:33.762	loss_prop_reg:28.604
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:72.700	loss_reg:38.799	loss_prop_reg:33.901
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:69.656	loss_reg:38.134	loss_prop_reg:31.521
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:63.169	loss_reg:34.363	loss_prop_reg:28.806
+Plotted gradient flow
+Validation data:  0.00% total_loss:68.224	loss_reg:36.567	loss_prop_reg:31.657
+Validation data:  25.64% total_loss:67.416	loss_reg:36.516	loss_prop_reg:30.900
+Validation data:  51.28% total_loss:78.152	loss_reg:43.721	loss_prop_reg:34.431
+Validation data:  76.92% total_loss:98.518	loss_reg:53.899	loss_prop_reg:44.619
+Calculating validation metrics...
+Epoch 22 validation-set results:  FDE: 2.146	ADE: 0.916	pFDE: 1.901	pADE: 0.836	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Best loss: 3.0138 Best ADE: 0.890 Best FDE: 2.124
+Epoch 22 time: 1390.474s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:80.921	loss_reg:42.714	loss_prop_reg:38.207
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:58.583	loss_reg:31.068	loss_prop_reg:27.515
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:76.231	loss_reg:40.783	loss_prop_reg:35.449
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:71.257	loss_reg:37.717	loss_prop_reg:33.539
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:59.488	loss_reg:32.836	loss_prop_reg:26.652
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:72.908	loss_reg:38.371	loss_prop_reg:34.537
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:84.171	loss_reg:44.387	loss_prop_reg:39.785
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:58.800	loss_reg:29.614	loss_prop_reg:29.186
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:64.395	loss_reg:34.408	loss_prop_reg:29.987
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:66.597	loss_reg:35.311	loss_prop_reg:31.286
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:73.588	loss_reg:40.342	loss_prop_reg:33.246
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:94.653	loss_reg:51.180	loss_prop_reg:43.473
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:72.601	loss_reg:40.310	loss_prop_reg:32.291
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:58.039	loss_reg:31.181	loss_prop_reg:26.858
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:70.408	loss_reg:37.365	loss_prop_reg:33.043
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:81.842	loss_reg:45.234	loss_prop_reg:36.608
+Plotted gradient flow
+Validation data:  0.00% total_loss:62.296	loss_reg:33.164	loss_prop_reg:29.133
+Validation data:  25.64% total_loss:66.119	loss_reg:36.107	loss_prop_reg:30.012
+Validation data:  51.28% total_loss:87.793	loss_reg:48.230	loss_prop_reg:39.563
+Validation data:  76.92% total_loss:98.542	loss_reg:52.692	loss_prop_reg:45.851
+Calculating validation metrics...
+Epoch 23 validation-set results:  FDE: 2.136	ADE: 0.911	pFDE: 1.886	pADE: 0.830	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Best loss: 3.0138 Best ADE: 0.890 Best FDE: 2.124
+Epoch 23 time: 1391.580s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:59.022	loss_reg:30.364	loss_prop_reg:28.658
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:95.424	loss_reg:51.326	loss_prop_reg:44.098
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:74.041	loss_reg:39.743	loss_prop_reg:34.298
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:54.874	loss_reg:29.088	loss_prop_reg:25.786
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:71.713	loss_reg:35.902	loss_prop_reg:35.811
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:77.206	loss_reg:40.859	loss_prop_reg:36.347
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:74.403	loss_reg:39.265	loss_prop_reg:35.138
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:65.961	loss_reg:36.750	loss_prop_reg:29.210
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:60.507	loss_reg:33.256	loss_prop_reg:27.251
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:68.241	loss_reg:35.914	loss_prop_reg:32.327
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:74.232	loss_reg:40.349	loss_prop_reg:33.883
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:50.228	loss_reg:26.926	loss_prop_reg:23.301
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:74.074	loss_reg:38.487	loss_prop_reg:35.587
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:78.558	loss_reg:42.410	loss_prop_reg:36.148
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:49.180	loss_reg:26.471	loss_prop_reg:22.709
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:66.706	loss_reg:34.609	loss_prop_reg:32.098
+Plotted gradient flow
+Validation data:  0.00% total_loss:68.543	loss_reg:34.681	loss_prop_reg:33.862
+Validation data:  25.64% total_loss:62.846	loss_reg:33.906	loss_prop_reg:28.939
+Validation data:  51.28% total_loss:84.793	loss_reg:46.580	loss_prop_reg:38.213
+Validation data:  76.92% total_loss:99.384	loss_reg:52.897	loss_prop_reg:46.487
+Calculating validation metrics...
+Epoch 24 validation-set results:  FDE: 2.101	ADE: 0.882	pFDE: 1.866	pADE: 0.796	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 2.9831 Best ADE: 0.882 Best FDE: 2.101
+Epoch 24 time: 1390.088s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:63.041	loss_reg:34.560	loss_prop_reg:28.480
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:73.504	loss_reg:36.714	loss_prop_reg:36.790
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:70.753	loss_reg:37.259	loss_prop_reg:33.495
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:58.265	loss_reg:31.772	loss_prop_reg:26.492
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:64.423	loss_reg:34.294	loss_prop_reg:30.130
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:65.411	loss_reg:34.770	loss_prop_reg:30.640
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:71.693	loss_reg:36.103	loss_prop_reg:35.590
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:71.670	loss_reg:37.422	loss_prop_reg:34.248
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:71.937	loss_reg:37.581	loss_prop_reg:34.356
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:77.594	loss_reg:41.248	loss_prop_reg:36.346
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:75.944	loss_reg:40.598	loss_prop_reg:35.346
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:64.067	loss_reg:33.246	loss_prop_reg:30.821
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:66.754	loss_reg:33.997	loss_prop_reg:32.757
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:79.542	loss_reg:44.092	loss_prop_reg:35.450
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:69.090	loss_reg:34.873	loss_prop_reg:34.218
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:76.184	loss_reg:41.319	loss_prop_reg:34.865
+Plotted gradient flow
+Validation data:  0.00% total_loss:68.993	loss_reg:36.921	loss_prop_reg:32.071
+Validation data:  25.64% total_loss:62.536	loss_reg:33.812	loss_prop_reg:28.724
+Validation data:  51.28% total_loss:86.923	loss_reg:46.587	loss_prop_reg:40.336
+Validation data:  76.92% total_loss:100.003	loss_reg:53.547	loss_prop_reg:46.456
+Calculating validation metrics...
+Epoch 25 validation-set results:  FDE: 2.142	ADE: 0.920	pFDE: 1.880	pADE: 0.821	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Best loss: 2.9831 Best ADE: 0.882 Best FDE: 2.101
+Epoch 25 time: 1389.194s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:63.371	loss_reg:34.533	loss_prop_reg:28.838
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:78.260	loss_reg:42.319	loss_prop_reg:35.940
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:59.989	loss_reg:31.711	loss_prop_reg:28.278
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:63.572	loss_reg:35.658	loss_prop_reg:27.913
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:54.442	loss_reg:29.043	loss_prop_reg:25.399
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:83.260	loss_reg:43.670	loss_prop_reg:39.590
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:92.881	loss_reg:47.894	loss_prop_reg:44.987
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:69.674	loss_reg:34.187	loss_prop_reg:35.487
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:64.636	loss_reg:34.448	loss_prop_reg:30.188
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:58.251	loss_reg:30.624	loss_prop_reg:27.626
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:67.444	loss_reg:35.055	loss_prop_reg:32.390
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:99.090	loss_reg:53.823	loss_prop_reg:45.267
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:74.491	loss_reg:39.317	loss_prop_reg:35.174
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:74.041	loss_reg:40.724	loss_prop_reg:33.317
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:72.712	loss_reg:38.113	loss_prop_reg:34.599
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:64.023	loss_reg:32.835	loss_prop_reg:31.188
+Plotted gradient flow
+Validation data:  0.00% total_loss:69.795	loss_reg:38.112	loss_prop_reg:31.683
+Validation data:  25.64% total_loss:61.211	loss_reg:34.533	loss_prop_reg:26.679
+Validation data:  51.28% total_loss:79.881	loss_reg:43.597	loss_prop_reg:36.284
+Validation data:  76.92% total_loss:94.268	loss_reg:50.944	loss_prop_reg:43.323
+Calculating validation metrics...
+Epoch 26 validation-set results:  FDE: 2.099	ADE: 0.878	pFDE: 1.854	pADE: 0.796	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 2.9771 Best ADE: 0.878 Best FDE: 2.099
+Epoch 26 time: 1387.457s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:64.769	loss_reg:36.494	loss_prop_reg:28.275
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:92.984	loss_reg:50.284	loss_prop_reg:42.700
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:80.592	loss_reg:44.932	loss_prop_reg:35.661
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:76.760	loss_reg:41.546	loss_prop_reg:35.215
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:85.352	loss_reg:45.851	loss_prop_reg:39.501
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:63.803	loss_reg:35.168	loss_prop_reg:28.635
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:78.181	loss_reg:40.185	loss_prop_reg:37.996
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:81.916	loss_reg:43.175	loss_prop_reg:38.742
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:71.657	loss_reg:37.407	loss_prop_reg:34.250
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:75.098	loss_reg:40.096	loss_prop_reg:35.002
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:78.615	loss_reg:42.010	loss_prop_reg:36.605
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:58.293	loss_reg:31.502	loss_prop_reg:26.791
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:78.687	loss_reg:40.925	loss_prop_reg:37.762
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:87.270	loss_reg:46.528	loss_prop_reg:40.741
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:53.584	loss_reg:28.609	loss_prop_reg:24.975
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:68.401	loss_reg:36.165	loss_prop_reg:32.236
+Plotted gradient flow
+Validation data:  0.00% total_loss:67.455	loss_reg:36.076	loss_prop_reg:31.379
+Validation data:  25.64% total_loss:57.902	loss_reg:30.877	loss_prop_reg:27.025
+Validation data:  51.28% total_loss:82.688	loss_reg:45.185	loss_prop_reg:37.503
+Validation data:  76.92% total_loss:98.244	loss_reg:53.730	loss_prop_reg:44.514
+Calculating validation metrics...
+Epoch 27 validation-set results:  FDE: 2.081	ADE: 0.874	pFDE: 1.860	pADE: 0.801	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 2.9544 Best ADE: 0.874 Best FDE: 2.081
+Epoch 27 time: 1386.436s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:55.393	loss_reg:29.051	loss_prop_reg:26.342
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:74.875	loss_reg:40.507	loss_prop_reg:34.368
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:74.164	loss_reg:39.452	loss_prop_reg:34.712
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:70.448	loss_reg:38.464	loss_prop_reg:31.985
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:69.139	loss_reg:37.340	loss_prop_reg:31.799
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:66.130	loss_reg:35.423	loss_prop_reg:30.707
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:69.767	loss_reg:37.143	loss_prop_reg:32.624
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:86.086	loss_reg:43.125	loss_prop_reg:42.962
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:89.118	loss_reg:46.259	loss_prop_reg:42.859
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:65.231	loss_reg:35.600	loss_prop_reg:29.631
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:53.875	loss_reg:28.923	loss_prop_reg:24.952
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:82.256	loss_reg:46.530	loss_prop_reg:35.726
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:69.057	loss_reg:36.303	loss_prop_reg:32.754
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:65.578	loss_reg:35.638	loss_prop_reg:29.939
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:57.681	loss_reg:29.606	loss_prop_reg:28.075
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:77.993	loss_reg:39.565	loss_prop_reg:38.427
+Plotted gradient flow
+Validation data:  0.00% total_loss:65.958	loss_reg:34.578	loss_prop_reg:31.380
+Validation data:  25.64% total_loss:61.298	loss_reg:33.316	loss_prop_reg:27.982
+Validation data:  51.28% total_loss:89.336	loss_reg:48.581	loss_prop_reg:40.754
+Validation data:  76.92% total_loss:94.375	loss_reg:49.599	loss_prop_reg:44.775
+Calculating validation metrics...
+Epoch 28 validation-set results:  FDE: 2.087	ADE: 0.866	pFDE: 1.871	pADE: 0.796	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 2.9528 Best ADE: 0.866 Best FDE: 2.087
+Epoch 28 time: 1385.471s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:79.388	loss_reg:42.222	loss_prop_reg:37.166
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:77.200	loss_reg:40.102	loss_prop_reg:37.098
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:72.797	loss_reg:38.920	loss_prop_reg:33.877
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:81.924	loss_reg:44.665	loss_prop_reg:37.259
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:77.551	loss_reg:39.745	loss_prop_reg:37.806
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:64.949	loss_reg:36.662	loss_prop_reg:28.287
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:65.172	loss_reg:34.747	loss_prop_reg:30.425
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:59.464	loss_reg:32.339	loss_prop_reg:27.125
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:70.900	loss_reg:38.906	loss_prop_reg:31.994
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:56.568	loss_reg:30.465	loss_prop_reg:26.103
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:65.868	loss_reg:37.965	loss_prop_reg:27.903
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:63.761	loss_reg:32.699	loss_prop_reg:31.062
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:81.047	loss_reg:41.464	loss_prop_reg:39.583
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:62.314	loss_reg:33.466	loss_prop_reg:28.847
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:85.858	loss_reg:45.004	loss_prop_reg:40.853
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:55.665	loss_reg:28.409	loss_prop_reg:27.256
+Plotted gradient flow
+Validation data:  0.00% total_loss:67.915	loss_reg:36.364	loss_prop_reg:31.551
+Validation data:  25.64% total_loss:62.099	loss_reg:33.894	loss_prop_reg:28.205
+Validation data:  51.28% total_loss:84.046	loss_reg:44.663	loss_prop_reg:39.383
+Validation data:  76.92% total_loss:99.258	loss_reg:53.305	loss_prop_reg:45.952
+Calculating validation metrics...
+Epoch 29 validation-set results:  FDE: 2.102	ADE: 0.884	pFDE: 1.862	pADE: 0.803	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Best loss: 2.9528 Best ADE: 0.866 Best FDE: 2.087
+Epoch 29 time: 1388.403s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:71.681	loss_reg:35.964	loss_prop_reg:35.717
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:60.834	loss_reg:32.752	loss_prop_reg:28.082
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:76.341	loss_reg:41.112	loss_prop_reg:35.228
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:62.860	loss_reg:34.723	loss_prop_reg:28.138
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:68.469	loss_reg:37.180	loss_prop_reg:31.289
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:67.634	loss_reg:35.282	loss_prop_reg:32.351
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:67.295	loss_reg:38.292	loss_prop_reg:29.003
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:60.889	loss_reg:32.443	loss_prop_reg:28.446
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:78.742	loss_reg:42.409	loss_prop_reg:36.333
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:63.884	loss_reg:34.762	loss_prop_reg:29.122
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:78.440	loss_reg:41.464	loss_prop_reg:36.976
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:73.443	loss_reg:40.557	loss_prop_reg:32.886
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:74.925	loss_reg:38.088	loss_prop_reg:36.837
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:99.608	loss_reg:52.687	loss_prop_reg:46.921
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:77.170	loss_reg:42.043	loss_prop_reg:35.127
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:81.444	loss_reg:43.137	loss_prop_reg:38.308
+Plotted gradient flow
+Validation data:  0.00% total_loss:65.001	loss_reg:34.108	loss_prop_reg:30.893
+Validation data:  25.64% total_loss:55.322	loss_reg:30.412	loss_prop_reg:24.910
+Validation data:  51.28% total_loss:78.704	loss_reg:43.780	loss_prop_reg:34.924
+Validation data:  76.92% total_loss:91.611	loss_reg:48.600	loss_prop_reg:43.011
+Calculating validation metrics...
+Epoch 30 validation-set results:  FDE: 2.067	ADE: 0.867	pFDE: 1.848	pADE: 0.797	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 2.9338 Best ADE: 0.867 Best FDE: 2.067
+Epoch 30 time: 1382.986s
+Training data:  0.00% lr=1.000e-03 rel_coef=100.0 total_loss:74.127	loss_reg:40.905	loss_prop_reg:33.222
+Training data:  6.41% lr=1.000e-03 rel_coef=100.0 total_loss:58.799	loss_reg:31.567	loss_prop_reg:27.233
+Training data:  12.81% lr=1.000e-03 rel_coef=100.0 total_loss:67.392	loss_reg:35.071	loss_prop_reg:32.321
+Training data:  19.22% lr=1.000e-03 rel_coef=100.0 total_loss:80.502	loss_reg:42.718	loss_prop_reg:37.784
+Training data:  25.62% lr=1.000e-03 rel_coef=100.0 total_loss:62.907	loss_reg:34.475	loss_prop_reg:28.431
+Training data:  32.03% lr=1.000e-03 rel_coef=100.0 total_loss:77.394	loss_reg:39.574	loss_prop_reg:37.820
+Training data:  38.44% lr=1.000e-03 rel_coef=100.0 total_loss:69.351	loss_reg:36.500	loss_prop_reg:32.851
+Training data:  44.84% lr=1.000e-03 rel_coef=100.0 total_loss:60.531	loss_reg:30.445	loss_prop_reg:30.085
+Training data:  51.25% lr=1.000e-03 rel_coef=100.0 total_loss:75.887	loss_reg:39.320	loss_prop_reg:36.567
+Training data:  57.66% lr=1.000e-03 rel_coef=100.0 total_loss:67.743	loss_reg:35.995	loss_prop_reg:31.747
+Training data:  64.06% lr=1.000e-03 rel_coef=100.0 total_loss:68.331	loss_reg:35.482	loss_prop_reg:32.849
+Training data:  70.47% lr=1.000e-03 rel_coef=100.0 total_loss:86.218	loss_reg:46.625	loss_prop_reg:39.593
+Training data:  76.87% lr=1.000e-03 rel_coef=100.0 total_loss:72.405	loss_reg:38.426	loss_prop_reg:33.979
+Training data:  83.28% lr=1.000e-03 rel_coef=100.0 total_loss:69.321	loss_reg:36.955	loss_prop_reg:32.366
+Training data:  89.69% lr=1.000e-03 rel_coef=100.0 total_loss:73.062	loss_reg:36.725	loss_prop_reg:36.337
+Training data:  96.09% lr=1.000e-03 rel_coef=100.0 total_loss:80.876	loss_reg:41.376	loss_prop_reg:39.501
+Plotted gradient flow
+Validation data:  0.00% total_loss:58.691	loss_reg:31.021	loss_prop_reg:27.670
+Validation data:  25.64% total_loss:61.911	loss_reg:33.994	loss_prop_reg:27.917
+Validation data:  51.28% total_loss:82.969	loss_reg:45.667	loss_prop_reg:37.302
+Validation data:  76.92% total_loss:90.806	loss_reg:48.615	loss_prop_reg:42.191
+Calculating validation metrics...
+Epoch 31 validation-set results:  FDE: 2.054	ADE: 0.856	pFDE: 1.847	pADE: 0.787	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 2.9103 Best ADE: 0.856 Best FDE: 2.054
+Epoch 31 time: 1382.625s
+Training data:  0.00% lr=1.000e-04 rel_coef=100.0 total_loss:62.753	loss_reg:33.040	loss_prop_reg:29.713
+Training data:  6.41% lr=1.000e-04 rel_coef=100.0 total_loss:44.732	loss_reg:23.220	loss_prop_reg:21.512
+Training data:  12.81% lr=1.000e-04 rel_coef=100.0 total_loss:63.955	loss_reg:34.586	loss_prop_reg:29.370
+Training data:  19.22% lr=1.000e-04 rel_coef=100.0 total_loss:47.533	loss_reg:25.787	loss_prop_reg:21.746
+Training data:  25.62% lr=1.000e-04 rel_coef=100.0 total_loss:45.446	loss_reg:25.091	loss_prop_reg:20.354
+Training data:  32.03% lr=1.000e-04 rel_coef=100.0 total_loss:64.125	loss_reg:34.570	loss_prop_reg:29.555
+Training data:  38.44% lr=1.000e-04 rel_coef=100.0 total_loss:47.644	loss_reg:25.804	loss_prop_reg:21.840
+Training data:  44.84% lr=1.000e-04 rel_coef=100.0 total_loss:70.537	loss_reg:35.961	loss_prop_reg:34.576
+Training data:  51.25% lr=1.000e-04 rel_coef=100.0 total_loss:67.769	loss_reg:35.685	loss_prop_reg:32.083
+Training data:  57.66% lr=1.000e-04 rel_coef=100.0 total_loss:58.441	loss_reg:30.544	loss_prop_reg:27.897
+Training data:  64.06% lr=1.000e-04 rel_coef=100.0 total_loss:93.635	loss_reg:48.989	loss_prop_reg:44.646
+Training data:  70.47% lr=1.000e-04 rel_coef=100.0 total_loss:82.469	loss_reg:42.477	loss_prop_reg:39.992
+Training data:  76.87% lr=1.000e-04 rel_coef=100.0 total_loss:56.000	loss_reg:29.171	loss_prop_reg:26.829
+Training data:  83.28% lr=1.000e-04 rel_coef=100.0 total_loss:63.945	loss_reg:35.583	loss_prop_reg:28.361
+Training data:  89.69% lr=1.000e-04 rel_coef=100.0 total_loss:64.553	loss_reg:34.212	loss_prop_reg:30.341
+Training data:  96.09% lr=1.000e-04 rel_coef=100.0 total_loss:71.457	loss_reg:36.874	loss_prop_reg:34.583
+Plotted gradient flow
+Validation data:  0.00% total_loss:59.670	loss_reg:30.497	loss_prop_reg:29.173
+Validation data:  25.64% total_loss:56.281	loss_reg:30.718	loss_prop_reg:25.563
+Validation data:  51.28% total_loss:76.184	loss_reg:42.356	loss_prop_reg:33.828
+Validation data:  76.92% total_loss:89.166	loss_reg:47.427	loss_prop_reg:41.739
+Calculating validation metrics...
+Epoch 32 validation-set results:  FDE: 1.975	ADE: 0.817	pFDE: 1.754	pADE: 0.746	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 2.7924 Best ADE: 0.817 Best FDE: 1.975
+Epoch 32 time: 1379.434s
+Training data:  0.00% lr=1.000e-04 rel_coef=100.0 total_loss:49.410	loss_reg:27.215	loss_prop_reg:22.195
+Training data:  6.41% lr=1.000e-04 rel_coef=100.0 total_loss:47.518	loss_reg:25.360	loss_prop_reg:22.158
+Training data:  12.81% lr=1.000e-04 rel_coef=100.0 total_loss:55.208	loss_reg:29.505	loss_prop_reg:25.703
+Training data:  19.22% lr=1.000e-04 rel_coef=100.0 total_loss:56.229	loss_reg:28.163	loss_prop_reg:28.066
+Training data:  25.62% lr=1.000e-04 rel_coef=100.0 total_loss:66.826	loss_reg:35.293	loss_prop_reg:31.533
+Training data:  32.03% lr=1.000e-04 rel_coef=100.0 total_loss:60.232	loss_reg:32.367	loss_prop_reg:27.865
+Training data:  38.44% lr=1.000e-04 rel_coef=100.0 total_loss:56.860	loss_reg:29.415	loss_prop_reg:27.445
+Training data:  44.84% lr=1.000e-04 rel_coef=100.0 total_loss:58.706	loss_reg:30.405	loss_prop_reg:28.302
+Training data:  51.25% lr=1.000e-04 rel_coef=100.0 total_loss:52.744	loss_reg:27.051	loss_prop_reg:25.693
+Training data:  57.66% lr=1.000e-04 rel_coef=100.0 total_loss:80.741	loss_reg:43.826	loss_prop_reg:36.915
+Training data:  64.06% lr=1.000e-04 rel_coef=100.0 total_loss:62.814	loss_reg:33.188	loss_prop_reg:29.626
+Training data:  70.47% lr=1.000e-04 rel_coef=100.0 total_loss:46.389	loss_reg:24.251	loss_prop_reg:22.137
+Training data:  76.87% lr=1.000e-04 rel_coef=100.0 total_loss:72.281	loss_reg:39.926	loss_prop_reg:32.355
+Training data:  83.28% lr=1.000e-04 rel_coef=100.0 total_loss:66.449	loss_reg:34.905	loss_prop_reg:31.545
+Training data:  89.69% lr=1.000e-04 rel_coef=100.0 total_loss:48.343	loss_reg:25.508	loss_prop_reg:22.835
+Training data:  96.09% lr=1.000e-04 rel_coef=100.0 total_loss:57.426	loss_reg:29.101	loss_prop_reg:28.325
+Plotted gradient flow
+Validation data:  0.00% total_loss:59.212	loss_reg:30.698	loss_prop_reg:28.514
+Validation data:  25.64% total_loss:57.029	loss_reg:31.099	loss_prop_reg:25.930
+Validation data:  51.28% total_loss:74.664	loss_reg:41.153	loss_prop_reg:33.511
+Validation data:  76.92% total_loss:87.304	loss_reg:46.725	loss_prop_reg:40.579
+Calculating validation metrics...
+Epoch 33 validation-set results:  FDE: 1.971	ADE: 0.819	pFDE: 1.760	pADE: 0.752	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 2.7897 Best ADE: 0.819 Best FDE: 1.971
+Epoch 33 time: 1384.058s
+Training data:  0.00% lr=1.000e-04 rel_coef=100.0 total_loss:58.717	loss_reg:31.418	loss_prop_reg:27.299
+Training data:  6.41% lr=1.000e-04 rel_coef=100.0 total_loss:56.150	loss_reg:30.099	loss_prop_reg:26.051
+Training data:  12.81% lr=1.000e-04 rel_coef=100.0 total_loss:51.121	loss_reg:27.076	loss_prop_reg:24.045
+Training data:  19.22% lr=1.000e-04 rel_coef=100.0 total_loss:63.473	loss_reg:32.015	loss_prop_reg:31.458
+Training data:  25.62% lr=1.000e-04 rel_coef=100.0 total_loss:57.747	loss_reg:28.317	loss_prop_reg:29.430
+Training data:  32.03% lr=1.000e-04 rel_coef=100.0 total_loss:55.497	loss_reg:29.562	loss_prop_reg:25.935
+Training data:  38.44% lr=1.000e-04 rel_coef=100.0 total_loss:55.356	loss_reg:28.623	loss_prop_reg:26.733
+Training data:  44.84% lr=1.000e-04 rel_coef=100.0 total_loss:60.867	loss_reg:31.920	loss_prop_reg:28.947
+Training data:  51.25% lr=1.000e-04 rel_coef=100.0 total_loss:50.172	loss_reg:26.427	loss_prop_reg:23.745
+Training data:  57.66% lr=1.000e-04 rel_coef=100.0 total_loss:58.999	loss_reg:31.568	loss_prop_reg:27.431
+Training data:  64.06% lr=1.000e-04 rel_coef=100.0 total_loss:66.560	loss_reg:34.634	loss_prop_reg:31.927
+Training data:  70.47% lr=1.000e-04 rel_coef=100.0 total_loss:57.921	loss_reg:29.911	loss_prop_reg:28.009
+Training data:  76.87% lr=1.000e-04 rel_coef=100.0 total_loss:43.925	loss_reg:23.790	loss_prop_reg:20.135
+Training data:  83.28% lr=1.000e-04 rel_coef=100.0 total_loss:48.576	loss_reg:25.480	loss_prop_reg:23.096
+Training data:  89.69% lr=1.000e-04 rel_coef=100.0 total_loss:52.386	loss_reg:29.030	loss_prop_reg:23.356
+Training data:  96.09% lr=1.000e-04 rel_coef=100.0 total_loss:70.195	loss_reg:37.862	loss_prop_reg:32.332
+Plotted gradient flow
+Validation data:  0.00% total_loss:59.492	loss_reg:30.582	loss_prop_reg:28.909
+Validation data:  25.64% total_loss:56.476	loss_reg:30.932	loss_prop_reg:25.543
+Validation data:  51.28% total_loss:75.760	loss_reg:41.749	loss_prop_reg:34.011
+Validation data:  76.92% total_loss:87.673	loss_reg:46.836	loss_prop_reg:40.837
+Calculating validation metrics...
+Epoch 34 validation-set results:  FDE: 1.969	ADE: 0.815	pFDE: 1.747	pADE: 0.744	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 2.7836 Best ADE: 0.815 Best FDE: 1.969
+Epoch 34 time: 1386.805s
+Training data:  0.00% lr=1.000e-04 rel_coef=100.0 total_loss:54.131	loss_reg:28.639	loss_prop_reg:25.492
+Training data:  6.41% lr=1.000e-04 rel_coef=100.0 total_loss:83.546	loss_reg:44.174	loss_prop_reg:39.372
+Training data:  12.81% lr=1.000e-04 rel_coef=100.0 total_loss:48.302	loss_reg:25.071	loss_prop_reg:23.231
+Training data:  19.22% lr=1.000e-04 rel_coef=100.0 total_loss:47.271	loss_reg:24.643	loss_prop_reg:22.627
+Training data:  25.62% lr=1.000e-04 rel_coef=100.0 total_loss:58.096	loss_reg:30.268	loss_prop_reg:27.827
+Training data:  32.03% lr=1.000e-04 rel_coef=100.0 total_loss:63.365	loss_reg:32.782	loss_prop_reg:30.583
+Training data:  38.44% lr=1.000e-04 rel_coef=100.0 total_loss:55.379	loss_reg:29.596	loss_prop_reg:25.783
+Training data:  44.84% lr=1.000e-04 rel_coef=100.0 total_loss:51.811	loss_reg:27.162	loss_prop_reg:24.648
+Training data:  51.25% lr=1.000e-04 rel_coef=100.0 total_loss:77.418	loss_reg:40.812	loss_prop_reg:36.607
+Training data:  57.66% lr=1.000e-04 rel_coef=100.0 total_loss:60.616	loss_reg:32.361	loss_prop_reg:28.255
+Training data:  64.06% lr=1.000e-04 rel_coef=100.0 total_loss:48.494	loss_reg:25.524	loss_prop_reg:22.970
+Training data:  70.47% lr=1.000e-04 rel_coef=100.0 total_loss:66.782	loss_reg:35.511	loss_prop_reg:31.271
+Training data:  76.87% lr=1.000e-04 rel_coef=100.0 total_loss:51.279	loss_reg:27.775	loss_prop_reg:23.504
+Training data:  83.28% lr=1.000e-04 rel_coef=100.0 total_loss:53.273	loss_reg:28.883	loss_prop_reg:24.390
+Training data:  89.69% lr=1.000e-04 rel_coef=100.0 total_loss:75.779	loss_reg:38.001	loss_prop_reg:37.779
+Training data:  96.09% lr=1.000e-04 rel_coef=100.0 total_loss:57.159	loss_reg:30.390	loss_prop_reg:26.769
+Plotted gradient flow
+Validation data:  0.00% total_loss:58.616	loss_reg:30.161	loss_prop_reg:28.455
+Validation data:  25.64% total_loss:56.949	loss_reg:31.479	loss_prop_reg:25.470
+Validation data:  51.28% total_loss:75.729	loss_reg:42.061	loss_prop_reg:33.668
+Validation data:  76.92% total_loss:89.137	loss_reg:47.706	loss_prop_reg:41.431
+Calculating validation metrics...
+Epoch 35 validation-set results:  FDE: 1.971	ADE: 0.815	pFDE: 1.749	pADE: 0.745	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Best loss: 2.7836 Best ADE: 0.815 Best FDE: 1.969
+Epoch 35 time: 1364.372s
+Training data:  0.00% lr=1.000e-05 rel_coef=100.0 total_loss:50.570	loss_reg:27.280	loss_prop_reg:23.290
+Training data:  6.41% lr=1.000e-05 rel_coef=100.0 total_loss:61.908	loss_reg:31.769	loss_prop_reg:30.139
+Training data:  12.81% lr=1.000e-05 rel_coef=100.0 total_loss:54.217	loss_reg:28.174	loss_prop_reg:26.043
+Training data:  19.22% lr=1.000e-05 rel_coef=100.0 total_loss:55.606	loss_reg:29.176	loss_prop_reg:26.430
+Training data:  25.62% lr=1.000e-05 rel_coef=100.0 total_loss:51.520	loss_reg:27.429	loss_prop_reg:24.091
+Training data:  32.03% lr=1.000e-05 rel_coef=100.0 total_loss:63.972	loss_reg:35.536	loss_prop_reg:28.436
+Training data:  38.44% lr=1.000e-05 rel_coef=100.0 total_loss:60.761	loss_reg:31.238	loss_prop_reg:29.523
+Training data:  44.84% lr=1.000e-05 rel_coef=100.0 total_loss:61.544	loss_reg:31.282	loss_prop_reg:30.262
+Training data:  51.25% lr=1.000e-05 rel_coef=100.0 total_loss:58.921	loss_reg:30.425	loss_prop_reg:28.496
+Training data:  57.66% lr=1.000e-05 rel_coef=100.0 total_loss:41.838	loss_reg:21.802	loss_prop_reg:20.036
+Training data:  64.06% lr=1.000e-05 rel_coef=100.0 total_loss:37.175	loss_reg:19.029	loss_prop_reg:18.146
+Training data:  70.47% lr=1.000e-05 rel_coef=100.0 total_loss:53.247	loss_reg:28.671	loss_prop_reg:24.576
+Training data:  76.87% lr=1.000e-05 rel_coef=100.0 total_loss:61.147	loss_reg:33.768	loss_prop_reg:27.379
+Training data:  83.28% lr=1.000e-05 rel_coef=100.0 total_loss:48.763	loss_reg:27.147	loss_prop_reg:21.616
+Training data:  89.69% lr=1.000e-05 rel_coef=100.0 total_loss:42.335	loss_reg:23.607	loss_prop_reg:18.728
+Training data:  96.09% lr=1.000e-05 rel_coef=100.0 total_loss:48.694	loss_reg:24.033	loss_prop_reg:24.661
+Plotted gradient flow
+Validation data:  0.00% total_loss:58.147	loss_reg:29.992	loss_prop_reg:28.155
+Validation data:  25.64% total_loss:57.275	loss_reg:31.864	loss_prop_reg:25.411
+Validation data:  51.28% total_loss:74.562	loss_reg:41.108	loss_prop_reg:33.454
+Validation data:  76.92% total_loss:87.177	loss_reg:46.497	loss_prop_reg:40.680
+Calculating validation metrics...
+Epoch 36 validation-set results:  FDE: 1.963	ADE: 0.812	pFDE: 1.745	pADE: 0.743	SCR: 0.000	SMR: 0.000	SMR_AV2: 0.000
+Validation FDE+ADE improved. Saving model. 
+Best loss: 2.7747 Best ADE: 0.812 Best FDE: 1.963
+Epoch 36 time: 1086.917s
+Loaded preprocessed validation data.
+Model: 2188528 parameters
+Evaluating model...
+Validation data:  0.00% total_loss:61.583	loss_reg:32.882	loss_prop_reg:28.701
+Validation data:  6.41% total_loss:103.184	loss_reg:57.334	loss_prop_reg:45.849
+Validation data:  12.82% total_loss:66.509	loss_reg:34.499	loss_prop_reg:32.010
+Validation data:  19.23% total_loss:64.839	loss_reg:36.669	loss_prop_reg:28.170
+Validation data:  25.64% total_loss:60.913	loss_reg:31.936	loss_prop_reg:28.977
+Validation data:  32.05% total_loss:56.370	loss_reg:28.631	loss_prop_reg:27.739
+Validation data:  38.46% total_loss:78.739	loss_reg:40.661	loss_prop_reg:38.078
+Validation data:  44.87% total_loss:82.552	loss_reg:43.561	loss_prop_reg:38.991
+Validation data:  51.28% total_loss:60.971	loss_reg:33.455	loss_prop_reg:27.516
+Validation data:  57.69% total_loss:80.048	loss_reg:40.878	loss_prop_reg:39.170
+Validation data:  64.10% total_loss:60.417	loss_reg:33.219	loss_prop_reg:27.198
+Validation data:  70.51% total_loss:59.368	loss_reg:32.470	loss_prop_reg:26.898
+Validation data:  76.92% total_loss:66.921	loss_reg:36.542	loss_prop_reg:30.379
+Validation data:  83.33% total_loss:83.251	loss_reg:44.644	loss_prop_reg:38.607
+Validation data:  89.74% total_loss:82.567	loss_reg:44.509	loss_prop_reg:38.058
+Validation data:  96.15% total_loss:76.195	loss_reg:41.648	loss_prop_reg:34.547
+Calculating validation metrics...
+Model Results:  FDE: 1.963	ADE: 0.812	SMR: 0.337	SMR_AV2: 0.257	SCR: 0.000	pFDE: 1.745	pADE: 0.743	iFDE: 3.204	iADE: 1.273	iFDE_3: 3.652	iADE_3: 1.439	iFDE_5: 3.839	iADE_5: 1.504	FDE_scored: 1.921	ADE_scored: 0.819	pFDE_scored: 1.570	pADE_scored: 0.711	SMR_scored: 0.343	SMR_AV2_scored: 0.259	SCR_scored: 0.000	iFDE_scored: 2.894	iADE_scored: 1.204	iFDE_3_scored: 3.205	iADE_3_scored: 1.320	iFDE_5_scored: 3.357	iADE_5_scored: 1.378

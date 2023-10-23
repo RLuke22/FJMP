@@ -150,6 +150,13 @@ horovodrun -np 4 -H localhost:4 python3 fjmp.py --mode train --dataset argoverse
 horovodrun -np 4 -H localhost:4 python3 fjmp.py --mode train --dataset argoverse2 --config_name fjmp_argoverse2 --batch_size 32 --max_epochs 36 --num_proposals 15 --gpu_start 0 --proposal_header --two_stage_training --training_stage 2 --ig dense --n_mapnet_layers 4 --decoder dagnn --teacher_forcing
 ```
 
+For training on 1 GPU:
+```
+python3 fjmp.py --mode train --dataset argoverse2 --config_name fjmp_argoverse2 --batch_size 128 --max_epochs 36 --num_proposals 15 --gpu_start 0 --proposal_header --two_stage_training --training_stage 1 --ig dense --n_mapnet_layers 4 --focal_loss --gamma 5. --weight_0 1. --weight_1 4. --weight_2 4. --learned_relation_header
+
+python3 fjmp.py --mode train --dataset argoverse2 --config_name fjmp_argoverse2 --batch_size 128 --max_epochs 36 --num_proposals 15 --gpu_start 0 --proposal_header --two_stage_training --training_stage 2 --ig dense --n_mapnet_layers 4 --decoder dagnn --teacher_forcing
+```
+
 To train the non-factorized baseline model on the Argoverse 2 dataset on 4 GPUs:
 ```
 horovodrun -np 4 -H localhost:4 python3 fjmp.py --mode train --dataset argoverse2 --config_name baseline_argoverse2 --batch_size 32 --max_epochs 36 --gpu_start 0 --n_mapnet_layers 4 --decoder lanegcn
@@ -159,7 +166,7 @@ We include a sample log of an Argoverse 2 training run on 4 GPUs at ```misc/log`
 
 ### Model Checkpoints 
 
-We provide FJMP model checkpoints for both the INTERACTION and Argoverse 2 datasets. Model checkpoints will be provided soon, please stay updated! Download and extract the tar file of interest, and place the extracted directory into the ```logs``` directory.
+We provide FJMP model checkpoints and sample logs for both the INTERACTION and Argoverse 2 datasets. Model checkpoints can be found in the ```logs``` directory, with expected results listed above in the Results section of this README.
 
 ## Evaluation
 

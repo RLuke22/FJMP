@@ -18,7 +18,6 @@ Table of Contents
   * [Preprocess Data](#preprocess-data)
   * [Training](#training)
   * [Evaluation](#eval)
-  * [Test Submission](#test-submission)
   * [License](#license)
   * [Citation](#citation)
 
@@ -195,10 +194,6 @@ python3 fjmp.py --mode eval --dataset interaction --config_name fjmp_interaction
 # Argoverse 2 evaluation
 python3 fjmp.py --mode eval --dataset argoverse2 --config_name fjmp_argoverse2 --batch_size 32 --max_epochs 36 --num_proposals 15 --gpu_start 0 --proposal_header --two_stage_training --training_stage 1 --ig dense --n_mapnet_layers 4 --focal_loss --gamma 5. --weight_0 1. --weight_1 4. --weight_2 4. --learned_relation_header
 ```
-
-## Test Submission
-
-It seems that currently the test set submission [website](http://challenge.interaction-dataset.com/prediction-challenge/intro) is down for the INTERACTION dataset. We will release the code for submitting FJMP to the test set upon the re-activation of the submission website. Unfortunately, the Argoverse 2 CVPR 2023 Multi-World (Joint Prediction) [challenge](https://eval.ai/web/challenges/challenge-page/1719/leaderboard/4761) is closed as of June 11, 2023. We will release code for submitting FJMP to the Argoverse 2 Multi-World test set if the challenge re-opens. 
 
 ## License
 

@@ -18,6 +18,7 @@ Table of Contents
   * [Preprocess Data](#preprocess-data)
   * [Training](#training)
   * [Evaluation](#eval)
+  * [Submitting to INTERACTION Leaderboard](#submit)
   * [License](#license)
   * [Citation](#citation)
 
@@ -193,6 +194,19 @@ python3 fjmp.py --mode eval --dataset interaction --config_name fjmp_interaction
 
 # Argoverse 2 evaluation
 python3 fjmp.py --mode eval --dataset argoverse2 --config_name fjmp_argoverse2 --batch_size 32 --max_epochs 36 --num_proposals 15 --gpu_start 0 --proposal_header --two_stage_training --training_stage 1 --ig dense --n_mapnet_layers 4 --focal_loss --gamma 5. --weight_0 1. --weight_1 4. --weight_2 4. --learned_relation_header
+```
+
+## Submitting to INTERACTION Leaderboard
+
+To submit to the INTERACTION leaderboard, we first recommend re-training FJMP on both the train and validation sets, where we use the checkpoint after 50 epochs of training to build the submission. To train with both the train and validation sets, first create the combined train+validation set by running:
+```
+python3 create_train_all_interaction.py
+```
+Then, train the FJMP models as usual with the ```--train_all``` flag enabled during both stage 1 and stage 2 training.
+
+To create a submission file for the INTERACTION benchmark, run the following, replacing ```config_name``` with the config name for submission. This will create a directory ```sub``` which you can submit to the INTERACTION benchmark:
+```
+python3 fjmp_test.py --mode eval --dataset interaction --config_name config_name --num_proposals 15 --gpu_start 0 --proposal_header --two_stage_training --training_stage 2 --ig sparse --decoder dagnn --supervise_vehicles --no_agenttype_encoder
 ```
 
 ## License

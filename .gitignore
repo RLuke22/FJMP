@@ -1,0 +1,11 @@
+dataset_INTERACTION/*.pkl
+dataset_INTERACTION/train/
+dataset_INTERACTION/val/
+dataset_INTERACTION/test_multi-agent/
+dataset_INTERACTION/preprocess/
+dataset_INTERACTION/train_reformatted/
+dataset_INTERACTION/val_reformatted/
+dataset_INTERACTION/test_reformatted/
+dataset_INTERACTION/maps
+sub/
+__pycache__/

@@ -853,24 +853,76 @@ class InteractionDataset(Dataset):
 class InteractionTestDataset(Dataset):
     def __init__(self, config):
         self.config = config 
-
         self.filename_pattern = re.compile(r'^(\w+)_obs_(\d+).csv$')
         self.mapping_filename = 'mapping_test.pkl'
         self.n_samples = 2644
-        self.tracks_reformatted = os.path.join(config['dataset_path'], 'test_reformatted')
-        self.preprocess_path = os.path.join(config['dataset_path'], 'preprocess', 'fjmp_test_nov6')
+        self.tracks = os.path.join(self.config['dataset_path'], 'test_multi-agent')
+        self.tracks_reformatted = self.config['tracks_test_reformatted']
+        self.preprocess_path = self.config["preprocess_test"]
 
-        # load mapping dictionary
-        with open(os.path.join(self.config['dataset_path'], self.mapping_filename), "rb") as f:
-            self.mapping = pickle.load(f) 
-        
+        if not os.path.isdir(self.tracks_reformatted):
+            os.makedirs(self.tracks_reformatted)
+
         self.projector = UtmProjector(lanelet2.io.Origin(0, 0))
         self.traffic_rules = lanelet2.traffic_rules.create(lanelet2.traffic_rules.Locations.Germany,
-                                            lanelet2.traffic_rules.Participants.Vehicle)             
+                                            lanelet2.traffic_rules.Participants.Vehicle)
+
+        # first check if mapping file exists         
+        if not os.path.isfile(os.path.join(self.config['dataset_path'], self.mapping_filename)):
+            print("Reformatting dataset...")
+
+            mapping = {}
+            idx = 0
+            for csv_file in os.listdir(self.tracks):
+                if not csv_file.endswith('.csv'):
+                    continue
+
+                csv_path = os.path.join(self.tracks, csv_file)
+                with open(csv_path, "r") as src:
+                    rdr = csv.reader(src)
+                    rdr = sorted(rdr, key = lambda r: r[0], reverse=True)
+
+                    scenarios = {}
+
+                    for r in rdr:
+                        
+                        if r[0] == "case_id" and r[0] not in scenarios:
+                            scenarios["header"] = self.row(r)
+                            continue
+                        
+                        if r[0] not in scenarios:
+                            scenarios[r[0]] = [self.row(r)]
+                        else:
+                            scenarios[r[0]].append(self.row(r))
+
+                    for scenario in scenarios:
+                        if scenario == "header":
+                            continue
+                        
+                        track_reformatted = csv_file[:-4] + "_{}".format(int(float(scenario))) + ".csv"
+                        track_reformatted_path = os.path.join(self.tracks_reformatted, track_reformatted)
+                        with open(track_reformatted_path, "w") as res:
+                            wtr = csv.writer(res)
+                            wtr.writerow(scenarios["header"])
+                            for r in scenarios[scenario]:
+                                wtr.writerow(r)
+
+                        mapping[idx] = track_reformatted
+                        idx += 1
+                
+            with open(os.path.join(self.config['dataset_path'], self.mapping_filename), "wb") as f:
+                pickle.dump(mapping, f)
+        
+        # load mapping dictionary
+        with open(os.path.join(self.config['dataset_path'], self.mapping_filename), "rb") as f:
+            self.mapping = pickle.load(f)             
 
 
     def __len__(self):
         return self.n_samples 
+
+    def row(self, r):
+        return (r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9], r[10], r[11], r[12], r[13])
 
     def read_interaction_data(self, idx):
         csv_file = self.mapping[idx]    

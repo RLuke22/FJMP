@@ -18,6 +18,7 @@ Table of Contents
   * [Preprocess Data](#preprocess-data)
   * [Training](#training)
   * [Evaluation](#eval)
+  * [Visualization](#visualization)
   * [Submitting to INTERACTION Leaderboard](#submit)
   * [License](#license)
   * [Citation](#citation)
@@ -194,6 +195,14 @@ python3 fjmp.py --mode eval --dataset interaction --config_name fjmp_interaction
 
 # Argoverse 2 evaluation
 python3 fjmp.py --mode eval --dataset argoverse2 --config_name fjmp_argoverse2 --batch_size 32 --max_epochs 36 --num_proposals 15 --gpu_start 0 --proposal_header --two_stage_training --training_stage 1 --ig dense --n_mapnet_layers 4 --focal_loss --gamma 5. --weight_0 1. --weight_1 4. --weight_2 4. --learned_relation_header
+```
+
+## Visualization
+
+To visualize predictions with a trained FJMP model, set the mode to ```viz``` and specify a space-separated set of indices to visualize in the train/validation set with the ```--scene_idxs_to_viz``` flag. The mapping from scene indices to INTERACTION scenarios can be found in ```dataset_[INTERACTION/AV2]/mapping_[train/val].pkl```. Visualizations will be saved to the ```viz``` directory. Here is an example on the INTERACTION dataset:
+
+```
+python3 fjmp.py --mode viz --dataset interaction --config_name fjmp_interaction --num_proposals 15 --gpu_start 0 --proposal_header --two_stage_training --training_stage 2 --ig sparse --decoder dagnn --teacher_forcing --supervise_vehicles --no_agenttype_encoder --scene_idxs_to_viz 0 1000 2000 3000 4000 5000 6000 7000 8000 9000 10000 11000
 ```
 
 ## Submitting to INTERACTION Leaderboard

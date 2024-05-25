@@ -9,3 +9,4 @@ dataset_INTERACTION/test_reformatted/
 dataset_INTERACTION/maps
 sub/
 __pycache__/
+viz/

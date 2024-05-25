@@ -19,7 +19,7 @@ from dag_utils import *
 from fjmp_metrics import *
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--mode", choices=['train', 'eval', 'eval_constant_velocity'], help='running mode : (train, eval, eval_constant_velocity)', default="train")
+parser.add_argument("--mode", choices=['train', 'eval', 'viz', 'eval_constant_velocity'], help='running mode : (train, eval, viz, eval_constant_velocity)', default="train")
 parser.add_argument("--dataset", choices=['interaction', 'argoverse2'], help='dataset : (interaction, argoverse2)', default="interaction")
 parser.add_argument("--config_name", default="dev", help="a name to indicate the log path and model save path")
 parser.add_argument("--num_edge_types", default=3, type=int, help='3 types: no-interaction, a-influences-b, b-influences-a')
@@ -54,6 +54,7 @@ parser.add_argument("--eval_training", action="store_true", help="run evaluation
 parser.add_argument("--supervise_vehicles", action="store_true", help="supervise only vehicles in loss function (for INTERACTION)?")
 parser.add_argument("--train_all", action="store_true", help="train on both the train and validation sets?")
 parser.add_argument("--no_agenttype_encoder", action="store_true", help="encode agent type in FJMP encoder? Only done for Argoverse 2 as INTERACTION only predicts vehicle trajectories.")
+parser.add_argument('--scene_idxs_to_viz', nargs='+', help='space-separated scene indices (indices map to scenes according to dataset_[INTERACTION/AV2]/mapping_[train/val].pkl dictionary) for visualization', required=False)
 
 args = parser.parse_args()
 
@@ -116,6 +117,9 @@ class FJMP(torch.nn.Module):
         self.supervise_vehicles = config["supervise_vehicles"]
         self.no_agenttype_encoder = config["no_agenttype_encoder"]
         self.train_all = config["train_all"]
+
+        if self.mode == 'viz':
+            self.scene_idxs_to_viz = [int(x) for x in config["scene_idxs_to_viz"]]
         
         if self.two_stage_training and self.training_stage == 2:
             self.pretrained_relation_header = None
@@ -297,6 +301,199 @@ class FJMP(torch.nn.Module):
         # dd = data-dictionary
         return dd
 
+    def _viz(self, val_loader):
+        hvd.broadcast_parameters(self.state_dict(), root_rank=0)
+
+        # create directory to store visualizations
+        if not os.path.isdir('viz'):
+            os.makedirs('viz')
+        
+        self.eval()
+        # validation results
+        results = {}
+        loc_preds, gt_locs_all, batch_idxs_all, has_preds_all, has_obs_all = [], [], [], [], []
+        centerlines_all, left_boundaries_all, right_boundaries_all = [], [], []
+        scene_idxs_to_viz_ordered, ks = [], []
+
+        tot = 0
+        with torch.no_grad():
+            tot_log = self.num_val_samples // (self.batch_size * hvd.size())
+            for i, data in tqdm(enumerate(val_loader)):
+                
+                # only process batch if it contains a scene we wish to visualize
+                contains_scene_idx_to_viz = False
+                scene_idxs_to_viz = []
+                for scene_idx_to_viz in self.scene_idxs_to_viz:
+                    if scene_idx_to_viz in [idx for idx in data['idx']]:
+                        print("Found {}".format(scene_idx_to_viz))
+                        contains_scene_idx_to_viz = True 
+                        scene_idxs_to_viz.append(scene_idx_to_viz)
+                
+                if not contains_scene_idx_to_viz:
+                    continue
+
+                dd = self.process(data)
+
+                for scene in scene_idxs_to_viz:
+                    graph_idx = list(dd["scene_idxs"]).index(scene)
+                    k = dd["sceneidx_to_batchidx_mapping"][scene]
+
+                    rot_k = dd["rot"][dd['batch_idxs'] == k][0]
+                    orig_k = dd["orig"][dd['batch_idxs'] == k][0]
+
+                    centerlines = dd["graph"][graph_idx]['centerlines']
+                    left_boundaries = dd["graph"][graph_idx]['left_boundaries']
+                    right_boundaries = dd["graph"][graph_idx]['right_boundaries']
+                    world_centerlines = []
+                    world_left_boundaries = []
+                    world_right_boundaries = []
+                    for centerline, left_boundary, right_boundary in zip(centerlines, left_boundaries, right_boundaries):
+                        world_centerlines.append(torch.matmul(centerline, rot_k.double()) + orig_k.double().view(1, 2))
+                        world_left_boundaries.append(torch.matmul(left_boundary, rot_k.double()) + orig_k.double().view(1, 2))
+                        world_right_boundaries.append(torch.matmul(right_boundary, rot_k.double()) + orig_k.double().view(1, 2))
+
+                    centerlines_all.append(world_centerlines)
+                    left_boundaries_all.append(world_left_boundaries)
+                    right_boundaries_all.append(world_right_boundaries)
+
+                    scene_idxs_to_viz_ordered.append(scene)
+                    ks.append(k + tot)
+                    
+                dgl_graph = self.init_dgl_graph(dd['batch_idxs'], dd['ctrs'], dd['orig'], dd['rot'], dd['agenttypes'], dd['world_locs'], dd['has_preds']).to(dev)
+                dgl_graph = self.feature_encoder(dgl_graph, dd['feats'][:,:self.observation_steps], dd['agenttypes'], dd['actor_idcs'], dd['actor_ctrs'], dd['lane_graph'])
+
+                ks_dict = {}
+                for scene in scene_idxs_to_viz:
+                    ks_dict[scene] = dd["sceneidx_to_batchidx_mapping"][scene]
+                
+                if self.two_stage_training and self.training_stage == 2:
+                    stage_1_graph = self.build_stage_1_graph(dgl_graph, dd['feats'][:,:self.observation_steps], dd['agenttypes'], dd['actor_idcs'], dd['actor_ctrs'], dd['lane_graph'])
+                else:
+                    stage_1_graph = None
+
+                ig_dict = {}
+                ig_dict["ig_labels"] = dd["ig_labels"]
+
+                res = self.forward(dd["scene_idxs"], dgl_graph, stage_1_graph, ig_dict, dd['batch_idxs'], dd["batch_idxs_edges"], dd["actor_ctrs"], prop_ground_truth=0., eval=True)
+                loc_preds.append(res["loc_pred"].detach().cpu())
+                
+                world_feat_locs = torch.matmul(dd["world_locs"].double(), dd['rot'].double()) + dd['orig'].double().view(-1, 1, 2)
+                gt_locs_all.append(world_feat_locs.detach().cpu())
+                batch_idxs_all.append(dd['batch_idxs'].detach().cpu() + tot)
+                has_preds_all.append(dd["has_preds"].detach().cpu())
+                has_obs_all.append(dd["has_obs"].detach().cpu())
+                tot += dd["batch_size"]
+
+            # [N, 10, 6, 2]
+            results['loc_pred'] = np.concatenate(loc_preds, axis=0)
+            # [N, 10, 2]
+            results['gt_locs_all'] = np.concatenate(gt_locs_all, axis=0)
+            results['has_preds_all'] = np.concatenate(has_preds_all, axis=0)
+            results['has_obs_all'] = np.concatenate(has_obs_all, axis=0)
+            results['batch_idxs'] = np.concatenate(batch_idxs_all) 
+
+            for s, scene in enumerate(scene_idxs_to_viz_ordered):
+                print_('Visualizing {}'.format(scene))
+                k = ks[s]
+
+                ps = results['loc_pred'][results['batch_idxs'] == k] 
+                gt = results['gt_locs_all'][results['batch_idxs'] == k] 
+                gt_obs = gt[:, :self.observation_steps, :]
+                gt_fut = gt[:, self.observation_steps:, :]
+            
+                has_fut_mask = results['has_preds_all'][results['batch_idxs'] == k] == 1
+                has_fut_mask = np.repeat(np.expand_dims(has_fut_mask, 2), 2, axis=2)
+
+                has_obs_mask = results['has_obs_all'][results['batch_idxs'] == k] == 1
+                has_obs_mask = np.repeat(np.expand_dims(has_obs_mask, 2), 2, axis=2)[:, :self.observation_steps, :]
+                    
+                for enn, (centerline, left_boundary, right_boundary) in enumerate(zip(centerlines_all[s], left_boundaries_all[s], right_boundaries_all[s])):
+                    # plt.plot(centerline[:, 0], centerline[:, 1], color="blue", linestyle='--', linewidth=0.75)
+                    if enn == 0:
+                        plt.plot(left_boundary[:, 0], left_boundary[:, 1], color="grey", linewidth=0.25, zorder=1, label="Lane Boundary")
+                    else:
+                        plt.plot(left_boundary[:, 0], left_boundary[:, 1], color="grey", linewidth=0.25, zorder=1)
+                    plt.plot(right_boundary[:, 0], right_boundary[:, 1], color="grey", linewidth=0.25, zorder=1)
+
+                min_x, min_y = 10000000, 1000000000
+                max_x, max_y = -10000000, -100000000
+                
+                # find the best joint mode
+                min_dis = np.inf
+                argmin_dis = 0
+                for j in range(6):
+                    dis = 0
+                    for i in range(ps.shape[0]):
+                        if not has_fut_mask[i,self.prediction_steps - 1,0]:
+                            continue
+                        dis += (ps[i,:,j,0][has_fut_mask[i, :, 0]][-1] - gt_fut[i, :, 0][has_fut_mask[i, :, 0]][-1])**2 + (ps[i,:,j,1][has_fut_mask[i, :, 1]][-1] - gt_fut[i, :, 1][has_fut_mask[i, :, 1]][-1])**2
+                        
+                    if min_dis > np.mean(dis):
+                        min_dis = dis
+                        argmin_dis = j
+                    
+                agents_to_plot = range(ps.shape[0])
+                for en, i in enumerate(agents_to_plot):
+                    if has_fut_mask[i, :, :].sum() == 0:
+                        continue
+
+                    other_idxs = list(range(self.num_joint_modes))
+                    other_idxs.remove(argmin_dis)
+                    for other_idx in other_idxs:
+                        plt.plot(ps[i,:,other_idx,0][has_fut_mask[i, :, 0]], ps[i,:,other_idx,1][has_fut_mask[i, :, 1]], color='salmon', linewidth=2, zorder=3)
+                        plt.scatter([ps[i,:,other_idx,0][has_fut_mask[i, :, 0]][-1]], [ps[i,:,other_idx,1][has_fut_mask[i, :, 1]][-1]], color='salmon', s=40, marker='o', zorder=4)
+
+                    if en == 0:
+                        plt.plot(ps[i,:,argmin_dis,0][has_fut_mask[i, :, 0]], ps[i,:,argmin_dis,1][has_fut_mask[i, :, 1]], color='red', linewidth=2, zorder=3, label="Predicted Future")
+                        plt.scatter([ps[i,:,argmin_dis,0][has_fut_mask[i, :, 0]][-1]], [ps[i,:,argmin_dis,1][has_fut_mask[i, :, 1]][-1]], color='red', s=40, marker='o', zorder=4, label="Predicted Endpoint")
+                
+                        plt.plot(gt_obs[i, :, 0][has_obs_mask[i, :, 0]], gt_obs[i, :, 1][has_obs_mask[i, :, 1]], color='orange', linestyle=':', linewidth=4, zorder=2, label="Ground-truth Past")  
+                        plt.plot(gt_fut[i, :, 0][has_fut_mask[i, :, 0]], gt_fut[i, :, 1][has_fut_mask[i, :, 1]], color='green', linestyle=':', linewidth=4, zorder=2, label="Ground-truth Future")
+                        plt.scatter([gt_fut[i, :, 0][has_fut_mask[i, :, 0]][-1]], [gt_fut[i, :, 1][has_fut_mask[i, :, 1]][-1]], color='green', s=100, marker='*', zorder=3, label="Ground-truth Endpoint")
+                    else:
+                        plt.plot(ps[i,:,argmin_dis,0][has_fut_mask[i, :, 0]], ps[i,:,argmin_dis,1][has_fut_mask[i, :, 1]], color='red', linewidth=2, zorder=3)
+                        plt.scatter([ps[i,:,argmin_dis,0][has_fut_mask[i, :, 0]][-1]], [ps[i,:,argmin_dis,1][has_fut_mask[i, :, 1]][-1]], color='red', s=40, marker='o', zorder=4)
+                
+                        plt.plot(gt_obs[i, :, 0][has_obs_mask[i, :, 0]], gt_obs[i, :, 1][has_obs_mask[i, :, 1]], color='orange', linestyle=':', linewidth=4, zorder=2)  
+                        plt.plot(gt_fut[i, :, 0][has_fut_mask[i, :, 0]], gt_fut[i, :, 1][has_fut_mask[i, :, 1]], color='green', linestyle=':', linewidth=4, zorder=2)
+                        plt.scatter([gt_fut[i, :, 0][has_fut_mask[i, :, 0]][-1]], [gt_fut[i, :, 1][has_fut_mask[i, :, 1]][-1]], color='green', s=100, marker='*', zorder=3)
+                    
+                    plt.annotate(en,
+                                (ps[i,:,argmin_dis,0][has_fut_mask[i, :, 0]][-1], ps[i,:,argmin_dis,1][has_fut_mask[i, :, 1]][-1]), zorder=5, fontsize=30)
+
+                    for x_val in gt_obs[i, :, 0][has_obs_mask[i, :, 0]]:
+                        if x_val < min_x:
+                            min_x = x_val 
+                        if x_val > max_x:
+                            max_x = x_val
+
+                    for y_val in gt_obs[i, :, 1][has_obs_mask[i, :, 1]]:
+                        if y_val < min_y:
+                            min_y = y_val 
+                        if y_val > max_y:
+                            max_y = y_val
+
+                    for x_val in gt_fut[i, :, 0][has_fut_mask[i, :, 0]]:
+                        if x_val < min_x:
+                            min_x = x_val 
+                        if x_val > max_x:
+                            max_x = x_val
+
+                    for y_val in gt_fut[i, :, 1][has_fut_mask[i, :, 1]]:
+                        if y_val < min_y:
+                            min_y = y_val 
+                        if y_val > max_y:
+                            max_y = y_val
+                
+                
+                plt.xlim([min_x - 5, max_x + 5])
+                plt.ylim([min_y - 5, max_y + 5])
+                plt.axis('off')
+                plt.legend(loc="upper left")
+                plt.savefig('viz/viz_scene{}_{}.png'.format(scene, self.config['config_name']), dpi=600, bbox_inches = 'tight')  
+                plt.clf()
+                print_('Visualization saved.')
+    
     def _train(self, train_loader, val_loader, optimizer, start_epoch, val_best, ade_best, fde_best, val_edge_acc_best):        
         hvd.broadcast_parameters(self.state_dict(), root_rank=0)
         hvd.broadcast_optimizer_state(optimizer, root_rank=0)
@@ -1106,6 +1303,7 @@ if __name__ == '__main__':
     config["supervise_vehicles"] = args.supervise_vehicles
     config["no_agenttype_encoder"] = args.no_agenttype_encoder 
     config["train_all"] = args.train_all
+    config["scene_idxs_to_viz"] = args.scene_idxs_to_viz
 
     config["log_path"].mkdir(exist_ok=True, parents=True)
     log = os.path.join(config["log_path"], "log")
@@ -1308,3 +1506,21 @@ if __name__ == '__main__':
         m = sum(p.numel() for p in model.parameters())
         print_("Evaluating interactive agents on validation set with constant velocity model...")
         model._eval_constant_velocity(val_loader, config["max_epochs"])
+    
+    # visualize scenarios specified in scene_idxs
+    else:
+        model = FJMP(config)
+        m = sum(p.numel() for p in model.parameters())
+        print_("Model: {} parameters".format(m))
+        print_("Visualizing scenarios...")
+        
+        # load model from stage 1 and freeze weights
+        if model.two_stage_training and model.training_stage == 2:
+            with open(os.path.join(config["log_path"], "config_stage_1.pkl"), "rb") as f:
+                config_stage_1 = pickle.load(f) 
+            
+            pretrained_relation_header = FJMP(config_stage_1)
+            model.prepare_for_stage_2(pretrained_relation_header)
+        
+        model.load_for_eval()
+        model._viz(val_loader)
